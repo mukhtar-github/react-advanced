@@ -139,6 +139,14 @@ export default UseStateBasics;
 
 #### useState - Array Examples
 
+When importing useState into the component file, you can either use;
+
+```javascript
+import React, { useState } from 'react';
+// or import inline
+const [people, setPeople] = React.useState([]);
+```
+
 1 Birthday Reminder
 
 ### useEffect and Conditional Rendering
