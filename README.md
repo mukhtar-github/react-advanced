@@ -50,6 +50,38 @@ export default ErrorExample;
 
 #### /tutorial/1-useState/setup/2-useState-basics.js
 
+useState is a function from react, and it is a named function, so when importing it, it must have curly brace.
+
+So what does useState function returns? When we invoke it, it returns an array of undefined and a function. The undefined is the state value that we'll use, and the function will control the state value.
+
+The state value was undefined, because we didn't pass a value when invoking it. Keep in mind that this value can be a string, it can be a number, an array, an object, bolean, whatever javascript value you would want.
+
+```javascript
+import React, { useState } from 'react';
+
+// useState is a function
+const UseStateBasics = () => {
+  //console.log(useState);
+  console.log(useState())
+  return <h2>useState basic example</h2>;
+};
+
+export default UseStateBasics;
+
+// Output in UI console
+ƒ useState(initialState) {
+      var dispatcher = resolveDispatcher();
+      return dispatcher.useState(initialState);
+    }
+
+// Output in UI console when invoked
+(2) [undefined, ƒ]
+0: undefined
+1: ƒ ()
+```
+
+
+
 1 Birthday Reminder
 
 ### useEffect and Conditional Rendering
