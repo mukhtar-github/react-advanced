@@ -6,8 +6,12 @@ const UseStateArray = () => {
   return <>
   {
     people.map((person) => {
-      console.log(person);
-      return 'hello';
+      const { id, name } = person;
+      return (
+        <div key={id} className='item'>
+          <h4>{name}</h4>
+        </div>
+      );
     })
   }
   </>;
