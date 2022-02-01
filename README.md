@@ -22,6 +22,30 @@ render() {
 }
 ```
 
+Why we cannot see the changed title in the error example file, is because we're not re-rendering our component, we only see the change in cosole.log().
+
+```javascript
+import React from 'react';
+
+const ErrorExample = () => {
+  let title = 'random title';
+  const handleClick = () => {
+    title = 'hello people';
+    console.log(title);
+  }
+  return (
+    <React.Fragment>
+      <h2>{title}</h2>
+      <button type='button' className='btn' onClick={handleClick}>
+        change title
+      </button>
+    </React.Fragment>
+  );
+};
+
+export default ErrorExample;
+```
+
 1 Birthday Reminder
 
 ### useEffect and Conditional Rendering
