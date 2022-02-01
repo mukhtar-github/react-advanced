@@ -20,6 +20,17 @@ render() {
     </React.Fragment>
   );
 }
+// Or
+render() {
+  return (
+    <>
+      <ChildA />
+      <ChildB />
+      <ChildC />
+    </>
+  );
+}
+
 ```
 
 Why we cannot see the changed title in the error example file, is because we're not re-rendering the component, because we didn't preserve the changed value in between the renders. We can only see the change in cosole.log().
@@ -146,6 +157,8 @@ import React, { useState } from 'react';
 // or import inline
 const [people, setPeople] = React.useState([]);
 ```
+
+Ideally, if it is going to be invoked only once, the inline import may be quicker, but if it involves many invokes, it is better to use file import format.
 
 1 Birthday Reminder
 
