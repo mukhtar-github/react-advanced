@@ -4,7 +4,7 @@
 
 ## Corresponding Projects
 
-### useState - Simple Use Case
+### useState Basics - Simple Use Case
 
 #### tutorial/1-useState/setup/1-error-example.js
 
