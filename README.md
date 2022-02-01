@@ -153,12 +153,46 @@ export default UseStateBasics;
 When importing useState into the component file, you can either use;
 
 ```javascript
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 // or import inline
-const [people, setPeople] = React.useState([]);
+// const [people, setPeople] = React.useState([]);
+
+import React from 'react';
+import { data } from '../../../data';
+
+const UseStateArray = () => {
+  const [people, setPeople] = React.useState(data);
+
+  const removeItem = (id) => {
+    let newPeople = people.filter((person) => person.id !== id);
+    setPeople(newPeople);
+  }
+  return ( 
+  <>
+  {
+    people.map((person) => {
+      const { id, name } = person;
+      return (
+        <div key={id} className='item'>
+          <h4>{name}</h4>
+          <button onClick={() => removeItem(id)}>remove</button>
+        </div>
+      );
+    })
+  }
+  <button className='btn' onClick={() => setPeople([])}>
+    Clear Items
+  </button>
+  </>
+  );
+};
+
+export default UseStateArray;
 ```
 
 Ideally, if it is going to be invoked only once, the inline import may be quicker, but if it involves many invokes, it is better to use file import format.
+
+The arrow function inside the onClick in a button, prevents the invoked function inside the onClick run each time we render our app until the button is clicked.
 
 1 Birthday Reminder
 
