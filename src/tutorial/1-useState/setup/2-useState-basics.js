@@ -6,11 +6,15 @@ const UseStateBasics = () => {
   // const value = useState(1)[0];
   // const handler = useState(1)[1];
   // console.log(useState(value, handler)); // [1, ƒ]
-  const [text,setTexet] = useState('random title');
+  const [text,setText] = useState('random title');
 
   const handleClick = () => {
-    setTexet('hello world');
-  }
+    if (text === 'random title') {
+      setText('hello world');
+    } else {
+      setText('random title');
+    }
+  };
 
   return <React.Fragment>
     <h1>{text}</h1>
