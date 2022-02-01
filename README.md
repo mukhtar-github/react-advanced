@@ -4,11 +4,25 @@
 
 ## Corresponding Projects
 
-### useState
+### useState - Simple Use Case
 
-#### Simple Use Case
+- /tutorial/1-useState/setup/1-error-example.js
 
-1. Birthday Reminder
+Fragments - A common pattern in React is for a component to return multiple elements. Fragments let you group a list of children without adding extra nodes to the DOM.
+
+```javascript
+render() {
+  return (
+    <React.Fragment>
+      <ChildA />
+      <ChildB />
+      <ChildC />
+    </React.Fragment>
+  );
+}
+```
+
+1 Birthday Reminder
 
 ### useEffect and Conditional Rendering
 
