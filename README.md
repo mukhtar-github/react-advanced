@@ -97,6 +97,12 @@ const UseStateBasics = () => {
 
 import React, { useState } from 'react';
 
+// Rules of Hooks
+// Starts with use
+// Component name must be uppercase
+// Invoke inside function/component body
+// Don't call hooks conditonally
+
 // useState is a function
 const UseStateBasics = () => {
   // console.log(useState('hello world'));
@@ -125,6 +131,13 @@ export default UseStateBasics;
 ```
 
 #### General Rules of Hooks
+
+- Starts with use
+- Component name must be uppercase
+- Invoke inside function/component body
+- Don't call hooks conditonally
+
+#### useState - Array Examples
 
 1 Birthday Reminder
 
