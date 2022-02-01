@@ -190,9 +190,13 @@ const UseStateArray = () => {
 export default UseStateArray;
 ```
 
-Ideally, if it is going to be invoked only once, the inline import may be quicker, but if it involves many invokes, it is better to use file import format.
+Ideally, if the useState function is going to be invoked once, the inline import may be quicker, but if it involves many invokes, it is better to use file import format.
 
 The arrow function inside the onClick in a button, prevents the invoked function inside the onClick run each time we render our app until the button is clicked.
+
+#### useState - Object Example
+
+
 
 1 Birthday Reminder
 
