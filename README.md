@@ -60,6 +60,8 @@ For example, if we pass 'hello world' into the function, it will return the stri
 
 So keep in mind that, if useState returns an array, ofcourse we can assign it to a variable.
 
+Since we have array destructuring in JS, it allows us to set everything in one line.
+
 ```javascript
 import React, { useState } from 'react';
 
