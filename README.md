@@ -1,8 +1,12 @@
-# react-advanced
+# React Advanced
+
+## Starter Overview
 
 ## Corresponding Projects
 
 ### useState
+
+#### Simple Use Case
 
 1. Birthday Reminder
 
@@ -34,4 +38,4 @@
 
 14 Cart
 
-#### React Router
+### React Router
