@@ -56,6 +56,10 @@ So what does useState function returns? When we invoke it, it returns an array o
 
 The state value was undefined, because we didn't pass a value when invoking it. Keep in mind that this value can be a string, it can be a number, an array, an object, bolean, whatever javascript value you would want.
 
+For example, if we pass 'hello world' into the function, it will return the string 'hello world' in the console.
+
+So keep in mind that, if useState returns an array, ofcourse we can assign it to a variable.
+
 ```javascript
 import React, { useState } from 'react';
 
@@ -78,9 +82,17 @@ export default UseStateBasics;
 (2) [undefined, ƒ]
 0: undefined
 1: ƒ ()
+
+// Output in UI console when invoked with a string value
+['hello world', ƒ]
+
+const UseStateBasics = () => {
+  const value = useState(1)[0];
+  const handler = useState(1)[1];
+  console.log(useState(value, handler)); // [1, ƒ]
+  return <h2>useState basic example</h2>;
+};
 ```
-
-
 
 1 Birthday Reminder
 
