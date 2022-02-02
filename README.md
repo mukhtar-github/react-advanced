@@ -196,7 +196,34 @@ The arrow function inside the onClick in a button, prevents the invoked function
 
 #### useState - Object Example
 
+With the spread operator, we'll first copy the values of an object, and then we came up with which ever value we want to override.
 
+```javascript
+import React, { useState } from 'react';
+
+const UseStateObject = () => {
+  const [person, setPerson] = useState({
+    name: 'Musa',
+    age: 25,
+    message: 'random message'
+  });
+const changeMessage = () => {
+  setPerson({ message: 'hello world' })
+}
+  return (
+    <>
+      <h3>{person.name}</h3>
+      <h3>{person.age}</h3>
+      <h3>{person.message}</h3>
+      <button className='btn' onClick={changeMessage}>
+        change message
+      </button>
+   </>
+  );
+};
+
+export default UseStateObject;
+```
 
 1 Birthday Reminder
 
