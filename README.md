@@ -266,6 +266,33 @@ export default UseStateObject;
 
 We're going to show case how to setup a functional update form. In the previous examples, we've been using the value update form.
 
+```javascript
+import React, { useState } from 'react';
+
+const UseStateCounter = () => {
+  const [value, setValue] = useState(0);
+
+  const reset = () => {
+    setValue(0);
+  };
+  return (
+    <>
+      <section style={{ margin: '4rem 0' }}>
+        <h2>regular counter</h2>
+        <h1>{value}</h1>
+        <button className='btn' onClick={() => setValue
+          (value - 1)}>decrease</button>
+        <button className='btn' onClick={reset}>reset</button>
+        <button className='btn' onClick={() => setValue
+          (value + 1)}>increase</button>
+      </section>
+    </>
+  );
+};
+
+export default UseStateCounter;
+```
+
 ## Corresponding Projects
 
 1 Birthday Reminder
