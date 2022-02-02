@@ -196,7 +196,7 @@ The arrow function inside the onClick in a button, prevents the invoked function
 
 #### useState - Object Example
 
-With the spread operator, we'll first copy the values of an object, and then we came up with which ever value we want to override.
+With the spread operator, we'll first copy the values of an object, and then we came up with which ever value we want to override. In the example below, all the values in the person's object will be copied, and only the message value will be overridden.
 
 ```javascript
 import React, { useState } from 'react';
