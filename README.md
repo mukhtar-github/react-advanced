@@ -264,7 +264,7 @@ export default UseStateObject;
 
 #### Simple useState Counter Example
 
-We're going to show case how to setup a functional update form. In the previous examples, we've been using the value update form.
+We're going to show case how to setup a simple Counter update form. In the previous examples, we've been using the value update form.
 
 ```javascript
 import React, { useState } from 'react';
@@ -291,6 +291,16 @@ const UseStateCounter = () => {
 };
 
 export default UseStateCounter;
+```
+
+#### Functional Update Form Example
+
+We're going to show case how to setup a functional update form.
+
+In the setTimeout function, we have a callback function and the time value.
+
+```javascript
+
 ```
 
 ## Corresponding Projects
