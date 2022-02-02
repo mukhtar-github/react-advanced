@@ -192,7 +192,7 @@ export default UseStateArray;
 
 Ideally, if the useState function is going to be invoked once, the inline import may be quicker, but if it involves many invokes, it is better to use file import format.
 
-The arrow function inside the onClick in a button, prevents the invoked function inside the onClick run each time we render our app until the button is clicked.
+The arrow function inside the onClick in a button, prevents the invoked function inside the onClick to run each time we render our app until the button is clicked.
 
 #### useState - Object Example
 
@@ -208,7 +208,7 @@ const UseStateObject = () => {
     message: 'random message'
   });
 const changeMessage = () => {
-  setPerson({ message: 'hello world' })
+  setPerson({ ...person, message: 'hello world' })
 }
   return (
     <>
@@ -224,6 +224,11 @@ const changeMessage = () => {
 
 export default UseStateObject;
 ```
+
+#### useState - Multiple State Values
+
+In this case we're dealing with an object, we're only dealing with the useState values directly.
+
 
 1 Birthday Reminder
 
