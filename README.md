@@ -2,8 +2,6 @@
 
 ## Starter Overview
 
-## Corresponding Projects
-
 ### useState Basics - Simple Use Case
 
 #### tutorial/1-useState/setup/1-error-example.js
@@ -264,9 +262,11 @@ const changeMessage = () => {
 export default UseStateObject;
 ```
 
-#### Simple Counter
+#### Simple useState Counter Example
 
 We're going to show case how to setup a functional update form. In the previous examples, we've been using the value update form.
+
+## Corresponding Projects
 
 1 Birthday Reminder
 
