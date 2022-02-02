@@ -227,8 +227,43 @@ export default UseStateObject;
 
 #### useState - Multiple State Values
 
-In this case we're dealing with an object, we're only dealing with the useState values directly.
+In this case we're not dealing with the object, we'll only be dealing with the useState values directly.
 
+Also, there's no rule that prevents you from setting as many useState as you want. As shown in the below example.
+
+```javascript
+import React, { useState } from 'react';
+
+const UseStateObject = () => {
+  const [person, setPerson] = useState({
+    name: 'Musa',
+    age: 25,
+    message: 'random message'
+  });
+
+const [name, setName] = useState('Musa');
+const [age, setAge] = useState(25);
+const [message, setMessage] = useState('random message');
+
+const changeMessage = () => {
+  //setPerson({ ...person, message: 'hello world' });
+  setMessage('hello world');
+}
+  return (
+    <>
+      <h3>{name}</h3>
+      <h3>{age}</h3>
+      <h3>{message}</h3>
+      <button className='btn' onClick={changeMessage}>
+        change message
+      </button>
+   </>
+  );
+};
+
+export default UseStateObject;
+
+```
 
 1 Birthday Reminder
 

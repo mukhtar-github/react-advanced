@@ -12,7 +12,8 @@ const [age, setAge] = useState(25);
 const [message, setMessage] = useState('random message');
 
 const changeMessage = () => {
-  setPerson({ ...person, message: 'hello world' })
+  //setPerson({ ...person, message: 'hello world' });
+  setMessage('hello world');
 }
   return (
     <>
