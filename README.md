@@ -262,8 +262,11 @@ const changeMessage = () => {
 };
 
 export default UseStateObject;
-
 ```
+
+#### Simple Counter
+
+We're going to show case how to setup a functional update form. In the previous examples, we've been using the value update form.
 
 1 Birthday Reminder
 
