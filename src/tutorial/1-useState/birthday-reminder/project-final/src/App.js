@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import data from './data'
 import List from './List'
-function birthdayReminder() {
+function App() {
   const [people, setPeople] = useState(data)
   return (
     <main>
@@ -14,4 +14,4 @@ function birthdayReminder() {
   )
 }
 
-export default birthdayReminder
+export default App
