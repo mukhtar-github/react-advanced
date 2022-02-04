@@ -16,12 +16,14 @@ const UseStateBasics = () => {
     }
   };
 
-  return <React.Fragment>
-    <h1>{text}</h1>
-    <button className='btn' onClick={handleClick}>
-      change title
-    </button>
-  </React.Fragment>
+  return (
+    <React.Fragment>
+      <h1>{text}</h1>
+      <button className='btn' onClick={handleClick}>
+        change title
+      </button>
+    </React.Fragment>
+  )
 };
 
 export default UseStateBasics;
