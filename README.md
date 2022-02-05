@@ -104,6 +104,8 @@ So keep in mind that, if useState returns an array, ofcourse we can assign it to
 
 Since we have array destructuring in JS, it allows us to set everything in one line.
 
+> What do we pass to useState as an argument? The only argument to the useState() Hook is the initial state.
+
 ```javascript
 import React, { useState } from 'react';
 
