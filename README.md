@@ -417,6 +417,8 @@ export default UseEffectBasics;
 
 ### useEffect Conditional
 
+ Hooks cannot be placed inside of conditional statements.
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
