@@ -388,7 +388,7 @@ export default UseStateCounter;
 
 Every time you think of useEffect, think of work outside the component. By defaualt useEffect runs after every re-render.
 
-The way useEffect works is by passing a callback function, and whatever function we'll place in the callback function will run after
+The way useEffect works is by passing in the callback function, and whatever function we place inside the callback function will run after every render.
 
 ### useEffect and Conditional Rendering
 
