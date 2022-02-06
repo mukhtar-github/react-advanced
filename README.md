@@ -378,7 +378,7 @@ const UseStateCounter = () => {
 export default UseStateCounter;
 ```
 
-### Corresponding Projects
+### useState Corresponding Projects
 
 1 Birthday Reminder
 
@@ -392,7 +392,32 @@ The way useEffect works is by passing in the callback function, and whatever fun
 
 UseEffect is used when we want to setup side effect, and that is some work outside of the component. So think data fetching, think listining for events, think signing up for subscribtion, and stuffs along those lines.
 
-### useEffect and Conditional Rendering
+```javascript
+import React, { useState, useEffect } from 'react';
+// by default runs after every re-render
+// cleanup function
+// second parameter
+const UseEffectBasics = () => {
+  const [value, setValue] = useState(0);
+  useEffect(() => {
+    console.log('call useEffect');
+    document.title = `New Messages(${value})`;
+  });
+  console.log('render component');
+  return <>
+  <h1>{value}</h1>
+  <button className='btn' onClick={() => setValue(value + 1)}>
+    click me
+  </button>
+  </>;
+};
+
+export default UseEffectBasics;
+```
+
+### useEffect Conditional
+
+### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
 3 Reviews
