@@ -386,6 +386,8 @@ export default UseStateCounter;
 
 #### /tutorial/2-useEffect/setup/1-useEffect-basics.js
 
+Every time you think of useEffect, think of work outside the component.
+
 ### useEffect and Conditional Rendering
 
 2 Tours
