@@ -390,6 +390,8 @@ Every time you think of useEffect, think of work outside the component. By defau
 
 The way useEffect works is by passing in the callback function, and whatever function we place inside the callback function will run after every render.
 
+UseEffect is used when we want to setup side effect, and that is some work outside of the component. So think data fetching, think listining for events, think signing up for subscribtion, and stuffs along those lines.
+
 ### useEffect and Conditional Rendering
 
 2 Tours
