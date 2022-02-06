@@ -378,9 +378,11 @@ const UseStateCounter = () => {
 export default UseStateCounter;
 ```
 
-## Corresponding Projects
+### Corresponding Projects
 
 1 Birthday Reminder
+
+### useEffect Basics
 
 ### useEffect and Conditional Rendering
 
