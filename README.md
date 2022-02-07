@@ -446,7 +446,7 @@ export default UseEffectBasics;
 
 ### useEffect - Dependency list
 
-What is *Second Parameter?* It is the parameter after the callback function of the useEffect, and it's an array of dependencies.
+What is *Second Parameter?* It is the parameter after the callback function of the useEffect, and it's an array of dependencies, that's called a *List of Dependencies.*
 
 ### useEffect and Conditional Rendering Corresponding Projects
 
