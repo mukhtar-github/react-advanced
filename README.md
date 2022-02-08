@@ -450,6 +450,8 @@ What is *Second Parameter?* It is the parameter after the callback function of t
 
 We can add as many useEffect in your component as you want.
 
+### useEffect - Cleanup Function
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
