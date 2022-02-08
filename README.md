@@ -448,6 +448,8 @@ export default UseEffectBasics;
 
 What is *Second Parameter?* It is the parameter after the callback function of the useEffect, and it's an array of dependencies, that's called a *List of Dependencies.* If you only want useEffect to run in the initial render, so you should add the second argument, and you pass it as an empty array.
 
+We can add as many useEffect in your component as you want.
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
