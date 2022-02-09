@@ -452,6 +452,8 @@ We can add as many useEffect in your component as you want.
 
 ### useEffect - Cleanup Function
 
+#### /tutorial/2-useEffect/setup/2-useEffect-cleanup.js
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
