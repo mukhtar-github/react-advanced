@@ -483,6 +483,13 @@ const UseEffectBasics = () => {
 };
 
 export default UseEffectBasics;
+// Initial Run Output
+render component
+call useEffect
+Hello World
+// Second Run Output
+render component
+call useEffect
 ```
 
 ### useEffect - Cleanup Function
