@@ -496,6 +496,8 @@ call useEffect
 
 #### /tutorial/2-useEffect/setup/2-useEffect-cleanup.js
 
+So every time we have a useEffect, we have an option of returning a function, and the function will be invoked once we exit.
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
