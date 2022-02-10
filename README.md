@@ -448,7 +448,38 @@ export default UseEffectBasics;
 
 What is *Second Parameter?* It is the parameter after the callback function of the useEffect, and it's an array of dependencies, that's called a *List of Dependencies.* If you only want useEffect to run in the initial render, so you should add the second argument, and you pass it as an empty array.
 
-We can add as many useEffect in your component as you want.
+We can add as many useEffect in our component as we want.
+
+```javascript
+import React, { useState, useEffect } from 'react';
+// by default runs after every re-render
+// cleanup function
+// second parameter
+const UseEffectBasics = () => {
+  const [value, setValue] = useState(0);
+
+  useEffect(() => {
+    console.log('call useEffect');
+    if (value >= 1) {
+      document.title = `New Messages(${value})`;
+    } 
+  }, [value]);
+
+  useEffect(() => {
+    console.log('Hello World');
+  }, []);
+
+  console.log('render component');
+  return <>
+  <h1>{value}</h1>
+  <button className='btn' onClick={() => setValue(value + 1)}>
+    click me
+  </button>
+  </>;
+};
+
+export default UseEffectBasics;
+```
 
 ### useEffect - Cleanup Function
 
