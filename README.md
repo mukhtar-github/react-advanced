@@ -452,7 +452,7 @@ If you only want useEffect to run in the initial render, so you should add the s
 
 But when we pass a value into the the empty array, each time the vaue changed, the useEffect will run as well as the useState.
 
-We can add as many useEffect in our component as we want. However, the second useEffect only runs at the first render because we passed an empty array to it.
+We can add as many useEffect in our component as we want. However, the second useEffect only runs at the first render because we passed an empty array to it, and no value in the dependency list.
 
 ```javascript
 import React, { useState, useEffect } from 'react';
