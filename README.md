@@ -498,6 +498,8 @@ call useEffect
 
 So every time we have a useEffect, we have an option of returning a function, and the function will be invoked once we exit.
 
+The Cleanup Function is very important when we start dealing with components appearing and disappearing in our applications.
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
