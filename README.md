@@ -498,7 +498,40 @@ call useEffect
 
 So every time we have a useEffect, we have an option of returning a function, and the function will be invoked once we exit.
 
-The Cleanup Function is very important when we start dealing with components appearing and disappearing in our applications.
+The Cleanup Function is very important when we start dealing with components appearing and disappearing in our applications, like conditional rendering.
+
+```javascript
+import React, { useState, useEffect } from 'react';
+
+// cleanup function
+// second argument
+
+const UseEffectCleanup = () => {
+  const [size, setSize] = useState(window.innerWidth);
+
+  const checkSize = () => {
+    setSize(window.innerWidth);
+  };
+  
+  useEffect(() => {
+    console.log('useEffect');
+    window.addEventListener('resize', checkSize);
+    // return () => {
+    //   console.log('cleanup');
+    //   window.removeEventListener('resize', checkSize);
+    // };
+  }, []);
+  console.log('render');
+  return (
+    <>
+    <h1>Window</h1>
+    <h2>{size} PX</h2>
+  </>
+  );
+};
+
+export default UseEffectCleanup;
+```
 
 ### useEffect and Conditional Rendering Corresponding Projects
 
