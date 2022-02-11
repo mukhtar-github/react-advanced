@@ -516,10 +516,10 @@ const UseEffectCleanup = () => {
   useEffect(() => {
     console.log('useEffect');
     window.addEventListener('resize', checkSize);
-    // return () => {
-    //   console.log('cleanup');
-    //   window.removeEventListener('resize', checkSize);
-    // };
+    return () => {
+      console.log('cleanup');
+      window.removeEventListener('resize', checkSize);
+    };
   }, []);
   console.log('render');
   return (
@@ -540,6 +540,8 @@ export default UseEffectCleanup;
 > Async/Await returns a Promise!
 
 You can either set Async/Await inside the callback function of the useEffect, or you set it up as a seperate funtion outside the useEffect.
+
+useEffect is looking for a Clean-up function not for a Promise.
 
 ### useEffect and Conditional Rendering Corresponding Projects
 
