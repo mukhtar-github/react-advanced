@@ -587,6 +587,12 @@ const UseEffectFetchData = () => {
 export default UseEffectFetchData;
 ```
 
+### Conditional Rendering
+
+#### Multiple Returns
+
+
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
