@@ -537,6 +537,10 @@ export default UseEffectCleanup;
 
 #### tutorial/2-useEffect/setup/3-useEffect-fetch-data
 
+> Async/Await returns a Promise!
+
+You can either set Async/Await inside the callback function of the useEffect, or you set it up as a seperate funtion outside the useEffect.
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
