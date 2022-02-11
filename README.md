@@ -533,6 +533,10 @@ const UseEffectCleanup = () => {
 export default UseEffectCleanup;
 ```
 
+### useEffect - Fetch Data
+
+#### tutorial/2-useEffect/setup/3-useEffect-fetch-data
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
