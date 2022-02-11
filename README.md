@@ -541,6 +541,8 @@ export default UseEffectCleanup;
 
 You can either set Async/Await inside the callback function of the useEffect, or you set it up as a seperate funtion outside the useEffect. Because useEffect is looking for a Clean-up function not for a Promise.
 
+Inside the Async/Await function we're using fetch(), wich is a build-in function to get our data. But you can use Axios or some extenal libraries wich probably should be better for projects.
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
