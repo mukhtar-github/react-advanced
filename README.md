@@ -543,6 +543,8 @@ You can either set Async/Await inside the callback function of the useEffect, or
 
 Inside the Async/Await function we're using fetch(), wich is a build-in function to get our data. But you can use Axios or some extenal libraries wich probably should be better for projects.
 
+With the console.log() in the getUsers function, we do not trigger re-render to avoid crashing of the browser. But when we provide the dependency list empty array to the useEffect function, we'll avoid the crashing of the browser.
+
 > UseState preserves values and triggers re-render.
 
 ### useEffect and Conditional Rendering Corresponding Projects

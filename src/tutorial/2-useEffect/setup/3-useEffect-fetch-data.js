@@ -8,15 +8,19 @@ const UseEffectFetchData = () => {
   const getUsers = async () => {
     const response = await fetch(url);
     const users = await response.json();
-    console.log(users);
-  }
+    setUsers(users);
+    //console.log(users);
+  };
 
   useEffect(() => {
     getUsers();
-  });
+  }, []);
   return (
     <>
      <h3>Github Users</h3>
+     {users.map(() => {
+       
+     })}
     </>
   );
 };
