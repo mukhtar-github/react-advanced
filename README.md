@@ -595,6 +595,8 @@ export default UseEffectFetchData;
 
 In Javascript, the first return in a function overriddes the subsequent returns that follows.
 
+You can setup the whole application inside of one component. It's just about if the condition is not met then you have your default return.
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
