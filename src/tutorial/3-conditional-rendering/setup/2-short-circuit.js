@@ -11,6 +11,7 @@ const ShortCircuit = () => {
   <>
     <h1>{firstValue}</h1>
     <h1>Value : {secondValue}</h1>
+    {/*{if(){console.log('hello world')}}*/}
   </>
   )
 };
