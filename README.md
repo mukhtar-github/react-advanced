@@ -597,6 +597,24 @@ In Javascript, the first return in a function overrides the subsequent returns t
 
 Example is when loading a user's page, and if not found then the default signing up page loads instead. So if we didn't set up the the condition, the fisrt return will be the only one loading.
 
+```javascript
+import React, { useState, useEffect } from 'react';
+
+const url = 'https://api.github.com/users/QuincyLarson';
+
+const MultipleReturns = () => {
+  const [loading, setLoading] = useState(false);
+  
+  if (loading) {
+    return <h2>Loading...</h2>
+  }
+
+  return <h2>multiple returns</h2>;
+};
+
+export default MultipleReturns;
+```
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours

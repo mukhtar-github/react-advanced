@@ -4,6 +4,7 @@ const url = 'https://api.github.com/users/QuincyLarson';
 
 const MultipleReturns = () => {
   const [loading, setLoading] = useState(false);
+  
   if (loading) {
     return <h2>Loading...</h2>
   }
