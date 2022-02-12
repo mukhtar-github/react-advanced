@@ -674,6 +674,10 @@ const MultipleReturns = () => {
 export default MultipleReturns;
 ```
 
+#### Short-Circuit Evaluation
+
+#### /tutorial/3-conditional-rendering/setup/2-short-circuit
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
