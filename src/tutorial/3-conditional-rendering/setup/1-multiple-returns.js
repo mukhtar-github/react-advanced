@@ -3,9 +3,10 @@ import React, { useState, useEffect } from 'react';
 const url = 'https://api.github.com/users/QuincyLarson';
 
 const MultipleReturns = () => {
-  const [loading, setLoading] = useState(false);
-  
-  if (loading) {
+  const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(false);
+
+  if (isLoading) {
     return <h2>Loading...</h2>
   }
 
