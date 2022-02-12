@@ -707,6 +707,8 @@ const ShortCircuit = () => {
 export default ShortCircuit;
 ```
 
+#### Ternary Operator
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
