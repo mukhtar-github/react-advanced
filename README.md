@@ -678,7 +678,7 @@ export default MultipleReturns;
 
 #### /tutorial/3-conditional-rendering/setup/2-short-circuit
 
-In react, JSX has to return a value, that's why we setup expressions. So we'll work with short-circuits and ternary operators to display values conditionally.
+In react, JSX has to return a value, that's why we setup expressions. So we'll work with short-circuits and ternary operators to display values conditionally in the expressions.
 
 ### useEffect and Conditional Rendering Corresponding Projects
 
