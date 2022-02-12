@@ -593,9 +593,9 @@ export default UseEffectFetchData;
 
 #### tutorial/3-conditional-rendering/setup/1-multiple-returns
 
-In Javascript, the first return in a function overriddes the subsequent returns that follows.
+In Javascript, the first return in a function overrides the subsequent returns that follows. You can setup the whole application inside one component. It's about if a condition is not met, then you have your default to return.
 
-You can setup the whole application inside one component. It's about if a condition is not met, then you have your default to return. Example is when loading a user's page, and if not found then the default signing up page loads instead.
+Example is when loading a user's page, and if not found then the default signing up page loads instead. So if we didn't set up the the condition, the fisrt return will be the only one loading.
 
 ### useEffect and Conditional Rendering Corresponding Projects
 
