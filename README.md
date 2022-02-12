@@ -617,6 +617,8 @@ export default MultipleReturns;
 
 #### Multiple Returns - Fetching Data
 
+We'll set the useEffect where we'll control our conditions. With fetch function, we have .then because we're expecting a promise to be returned.
+
 
 
 ### useEffect and Conditional Rendering Corresponding Projects
