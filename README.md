@@ -682,6 +682,31 @@ In react, JSX has to return a value, that's why we setup expressions. So we'll w
 
 If we use OR (||) operator in our expressions and the first value is falsy, it will return the the second value. But in the case of AND (&&) operator, if the first value is true, it returns the second value.
 
+```javascript
+import React, { useState } from 'react';
+// short-circuit evaluation
+// ternary operator
+
+const ShortCircuit = () => {
+  const [text, setText] = useState('');
+  const firstValue = text || 'hello world';
+  const secondValue = text && 'hello world';
+
+  return (
+  <>
+    {/* <h1>{firstValue}</h1>
+    <h1>Value : {secondValue}</h1> */}
+    {/*{if(){console.log('hello world')}}*/}
+    <h1>{text || 'john doe'}</h1>
+    {text && <h1>hello world</h1>}
+    {!text && <h1>hello world</h1>}
+  </>
+  )
+};
+
+export default ShortCircuit;
+```
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
