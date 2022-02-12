@@ -680,6 +680,8 @@ export default MultipleReturns;
 
 In react, JSX has to return a value, that's why we setup expressions. So we'll work with short-circuits and ternary operators to display values conditionally in the expressions.
 
+If we use OR (||) operator in our expressions and the first value is falsy, it will return the the second value. But in the case of AND (&&) operator, if the first value is true, it returns the second value.
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
