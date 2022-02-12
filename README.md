@@ -615,6 +615,10 @@ const MultipleReturns = () => {
 export default MultipleReturns;
 ```
 
+#### Multiple Returns - Fetching Data
+
+
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
