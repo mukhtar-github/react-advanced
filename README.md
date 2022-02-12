@@ -593,6 +593,8 @@ export default UseEffectFetchData;
 
 #### tutorial/3-conditional-rendering/setup/1-multiple-returns
 
+In Javascript, the first return in a function overriddes the subsequent returns that follows.
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
