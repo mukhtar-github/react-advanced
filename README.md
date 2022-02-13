@@ -712,9 +712,17 @@ export default ShortCircuit;
 When we're toggling the useState between truthy and falsy, the && operator will be responding based on that.
 
 ```javascript
-const [isError, setIsError] = useState(false);
-<button className='btn'onClick={() => setIsError(!isError)}>toggle error</button>
-{isError && <h1>Error...</h1>}
+import React, { useState } from 'react';
+
+const ShortCircuit = () => {
+  const [isError, setIsError] = useState(false);
+  return (
+  <>
+    <button className='btn'onClick={() => setIsError(!isError)}>toggle error</button>
+    {isError && <h1>Error...</h1>}
+  </>
+  )
+};
 ```
 
 ### useEffect and Conditional Rendering Corresponding Projects
