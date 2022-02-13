@@ -19,6 +19,12 @@ const ShortCircuit = () => {
     {isError && <h1>Error...</h1>}
     {/* {text && <h1>hello world</h1>}
     {!text && <h1>hello world</h1>} */}
+    {isError ? (
+    <p>there is an error...</p>) : (
+      <div>
+        <h2>there is no error</h2>
+      </div>
+    )}
   </>
   )
 };
