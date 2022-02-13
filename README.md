@@ -709,6 +709,14 @@ export default ShortCircuit;
 
 #### Ternary Operator
 
+When we're toggling the useState between truthy and falsy, the && operator will be responding based on that.
+
+```javascript
+const [isError, setIsError] = useState(false);
+<button className='btn'onClick={() => setIsError(!isError)}>toggle error</button>
+{isError && <h1>Error...</h1>}
+```
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
