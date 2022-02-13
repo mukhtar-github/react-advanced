@@ -707,8 +707,6 @@ const ShortCircuit = () => {
 export default ShortCircuit;
 ```
 
-#### Ternary Operator
-
 When we're toggling the useState between truthy and falsy, the && operator will be responding based on that.
 
 ```javascript
@@ -724,6 +722,10 @@ const ShortCircuit = () => {
   )
 };
 ```
+
+#### Ternary Operator
+
+The difference between Ternary Operator and the Short-circuit evaluation is the fact that former will give you two possible values.
 
 ### useEffect and Conditional Rendering Corresponding Projects
 
