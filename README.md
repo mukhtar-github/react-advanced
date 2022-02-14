@@ -727,6 +727,8 @@ const ShortCircuit = () => {
 
 The difference between Ternary Operator and the Short-circuit evaluation is the fact that the former will give you two possible values. Example, show A if it's true or show B if it's false.
 
+We cannot use if statement, because it doesn't return a value. We either use Short-circuits or Ternary Operators.
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
