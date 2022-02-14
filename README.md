@@ -725,6 +725,10 @@ const ShortCircuit = () => {
 
 #### Ternary Operator
 
+The difference between Ternary Operator and the Short-circuit evaluation is the fact that the former will give you two possible values. Example, show A if it's true or show B if it's false.
+
+We cannot use if statement, because it doesn't return a value. We either use Short-circuits or Ternary Operators.
+
 ```javascript
 import React, { useState } from 'react';
 // short-circuit evaluation
@@ -760,9 +764,9 @@ const ShortCircuit = () => {
 export default ShortCircuit;
 ```
 
-The difference between Ternary Operator and the Short-circuit evaluation is the fact that the former will give you two possible values. Example, show A if it's true or show B if it's false.
+#### Show/Hide Component
 
-We cannot use if statement, because it doesn't return a value. We either use Short-circuits or Ternary Operators.
+#### /tutorial/3-conditional-rendering/setup/3-show-hide
 
 ### useEffect and Conditional Rendering Corresponding Projects
 
