@@ -725,6 +725,41 @@ const ShortCircuit = () => {
 
 #### Ternary Operator
 
+```javascript
+import React, { useState } from 'react';
+// short-circuit evaluation
+// ternary operator
+
+const ShortCircuit = () => {
+  const [text, setText] = useState('');
+  const [isError, setIsError] = useState(false);
+
+  // const firstValue = text || 'hello world';
+  // const secondValue = text && 'hello world';
+
+  return (
+  <>
+    {/* <h1>{firstValue}</h1>
+    <h1>Value : {secondValue}</h1> */}
+    {/*{if(){console.log('hello world')}}*/}
+    <h1>{text || 'john doe'}</h1>
+    <button className='btn'onClick={() => setIsError(!isError)}>toggle error</button>
+    {isError && <h1>Error...</h1>}
+    {/* {text && <h1>hello world</h1>}
+    {!text && <h1>hello world</h1>} */}
+    {isError ? (
+    <p>there is an error...</p>) : (
+      <div>
+        <h2>there is no error</h2>
+      </div>
+    )}
+  </>
+  )
+};
+
+export default ShortCircuit;
+```
+
 The difference between Ternary Operator and the Short-circuit evaluation is the fact that the former will give you two possible values. Example, show A if it's true or show B if it's false.
 
 We cannot use if statement, because it doesn't return a value. We either use Short-circuits or Ternary Operators.
