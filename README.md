@@ -770,6 +770,9 @@ export default ShortCircuit;
 
 This example is going to show us why we the cleanup function is sometimes used instead of using the empty array of the dependency list.
 
+Set the state value to be oppositeb the initial value.
+
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
