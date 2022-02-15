@@ -772,7 +772,7 @@ This example is going to show us why we the cleanup function is sometimes used i
 
 Set the state value to be oppositeb the initial value.
 
-We're not only limited to HTML elements, in this example we'll toggle react components.
+We're not only limited to just HTML elements. This example shows that can toggle with react components as well.
 
 ### useEffect and Conditional Rendering Corresponding Projects
 
