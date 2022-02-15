@@ -770,9 +770,49 @@ export default ShortCircuit;
 
 This example is going to show us why the cleanup function is sometimes used instead of using the empty array of the dependency list.
 
-Set the state value to be oppositeb the initial value.
+Set the state value to be opposite the initial value.
 
-We're not only limited to just HTML elements. This example shows that can toggle with react components as well.
+We're not only limited to just HTML elements. This example shows that we can toggle with react components as well.
+
+```javascript
+import React, { useState, useEffect } from 'react';
+
+const ShowHide = () => {
+  const [show, setShow] = useState(false);
+  return (
+  <>
+    <button className='btn' onClick={() => setShow(!show)}>
+      show/hide
+    </button>
+    {show && <Item />}
+  </>
+  );
+};
+
+const Item = () => {
+  const [size, setSize] = useState(window.innerWidth);
+
+  const checkSize = () => {
+    setSize(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', checkSize);
+    return () => {
+      window.removeEventListener('resize', checkSize);
+    }; 
+  }, []);
+
+  return (
+    <div style={{ marginTop: '2rem'}}>
+      <h1>window</h1>
+      <h2>size : {size} PX</h2>
+    </div>
+  )
+}
+
+export default ShowHide;
+```
 
 ### useEffect and Conditional Rendering Corresponding Projects
 
