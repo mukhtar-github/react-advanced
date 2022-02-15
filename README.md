@@ -768,6 +768,8 @@ export default ShortCircuit;
 
 #### /tutorial/3-conditional-rendering/setup/3-show-hide
 
+This example is going to show us why we the cleanup function is sometimes used instead of using the empty array of the dependency list.
+
 ### useEffect and Conditional Rendering Corresponding Projects
 
 2 Tours
