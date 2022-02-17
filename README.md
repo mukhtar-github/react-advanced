@@ -66,7 +66,7 @@ render() {
 
 Why we cannot see the changed title in the error example file, is because we're not re-rendering the component, because we didn't preserve the changed value in between the renders. We can only see the change in cosole.log().
 
-So essentially we would want to change and also, we'll want to keep the values between the renders, and also we'll want to trigger the re-render. And this where useState hook comes into play, where it would allow us to do just that.
+So essentially, we would want to change and also, we'll want to keep the values between the renders, and also we'll want to trigger the re-render. And this is where useState hook comes into play, where it would allow us to do just that.
 
 ```javascript
 import React from 'react';
