@@ -14,11 +14,11 @@ A *component* can be declared in several different ways. It can be a class with 
 
 When a *component* receives some props as an input, it is because a particular parent *component* returned an *element* with its type and these props. This is why people say that the props flows one way in React: from parents to children.
 
-An instance is what you refer to as this in the *component* class you write. It is useful for storing local state and reacting to the lifecycle events.
+An instance is what you refer to as *this* in the *component* class you write. It is useful for storing local state and reacting to the lifecycle events.
 
 Function *components* don’t have instances at all. Class *components* have instances, but you never need to create a *component* instance directly—React takes care of this.
 
-Finally, to create *elements*, use React.create*Element*(), JSX, or an *element* factory helper. Don’t write *elements* as plain objects in the real code—just know that they are plain objects under the hood.
+Finally, to create *elements*, use React.createElement(), JSX, or an *element* factory helper. Don’t write *elements* as plain objects in the real code — just know that they are plain objects under the hood.
 
 React *Element* - It is a simple object that describes a DOM node and its attributes or properties you can say. It is an immutable description object and you can not apply any methods on it.
 Eg -
@@ -27,7 +27,7 @@ Eg -
 <button class="blue"></button>
 ```
 
-React *Component* - It is a function or class that accepts an input and returns a React *element*. It has to keep references to its DOM nodes and to the instances of the child **components*.
+React *Component* - It is a function or class that accepts an input and returns a React *element*. It has to keep references to its DOM nodes and to the instances of the *child components*.
 
 ```javascript
 const SignIn = () => (
