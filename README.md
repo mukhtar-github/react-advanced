@@ -16,7 +16,7 @@ When a *component* receives some props as an input, it is because a particular p
 
 An instance is what you refer to as *this* in the *component* class you write. It is useful for storing local state and reacting to the lifecycle events.
 
-Function *components* don’t have instances at all. Class *components* have instances, but you never need to create a *component* instance directly—React takes care of this.
+Function *components* don’t have instances at all. Class *components* have instances, but you never need to create a *component* instance directly — React takes care of this.
 
 Finally, to create *elements*, use React.createElement(), JSX, or an *element* factory helper. Don’t write *elements* as plain objects in the real code — just know that they are plain objects under the hood.
 
