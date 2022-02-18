@@ -1,5 +1,7 @@
 # React Advanced
 
+npx create-react-app filename-app
+
 ## Starter Overview
 
 ### useState Basics - Simple Use Case
