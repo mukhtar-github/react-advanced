@@ -497,7 +497,7 @@ call useEffect
 
 #### /tutorial/2-useEffect/setup/2-useEffect-cleanup.js
 
-So every time we have a useEffect, we have an option of returning a function, and the function will be invoked once we exit.
+So every time we have a useEffect, we have an option of *returning a function*, and the function will be invoked once we exit.
 
 The Cleanup Function is very important when we start dealing with components appearing and disappearing in our applications, like conditional rendering.
 
