@@ -834,6 +834,8 @@ More specifically we're to cover control inputs, how they are and how they work.
 
 General info on how forms works in react. When dealing with Controlled inputs, you'll be hooking up the input to a state value.
 
+It's either you should use onSubmit but place it in the form element or you use onClick on the button element.
+
 ### Forms Corresponding Projects
 
 8 Lorem Ipsum Generator
