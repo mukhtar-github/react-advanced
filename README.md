@@ -832,6 +832,8 @@ export default ShowHide;
 
 More specifically we're to cover control inputs, how they are and how they work. And also how we can setup multiple inputs with just one function.
 
+General info on how forms works in react. When dealing with Controlled inputs, you'll be hooking up the input to a state value.
+
 ### Forms Corresponding Projects
 
 8 Lorem Ipsum Generator
