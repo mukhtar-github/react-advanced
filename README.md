@@ -826,7 +826,7 @@ export default ShowHide;
 6 Tabs
 7 Slider
 
-### Forms
+### Forms Basics
 
 #### /tutorial/4-forms/setup/1-controlled-inputs.js
 
