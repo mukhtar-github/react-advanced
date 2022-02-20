@@ -869,6 +869,10 @@ const ControlledInputs = () => {
 export default ControlledInputs;
 ```
 
+### Controlled Inputs
+
+So now let's connect our inputs to the state value. In other words, accessing the data inside the input.
+
 ### Forms Corresponding Projects
 
 8 Lorem Ipsum Generator
