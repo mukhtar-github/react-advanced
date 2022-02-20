@@ -838,7 +838,7 @@ It's either you should use onSubmit but place it in the form element or you use 
 
 ```javascript
 import React, { useState } from 'react';
-// JS
+// Vanilla JS
 // const input = document.getElementById('myText');
 // const inputValue = input.value
 // React
@@ -869,13 +869,63 @@ const ControlledInputs = () => {
 export default ControlledInputs;
 ```
 
-### Controlled Inputs
+#### Controlled Inputs
 
-So now let's connect our inputs to the state value., as we're typing or submitting. In other words, accessing the data inside the input. So we setup state values for that.
+So now let's connect our inputs to the state value, as we're typing or submitting. In other words, accessing the data inside the input. So we setup state values for that.
 
-So, we setup two attributes to the input element. One is going to be value, and the other is the EventListener, were we're going to setup our callback function. So that, each time we type something in the input.
+So, we setup two attributes to the input element. One is going to be value, and the other is the EventListener onChange function, were we're going to setup our callback function. So that, each time we type something in the input, the state function will update the value.
 
 The onChange function would help us to update the values typed in the form.
+
+```javascript
+import React, { useState } from 'react';
+// Vanilla JS
+// const input = document.getElementById('myText');
+// const inputValue = input.value
+// React
+// value, onChange
+
+const ControlledInputs = () => {
+  const [firstName, setFirstName] = useState('');
+  const [email, setEmail] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(firstName, email);
+  };
+
+  return (
+  <article>
+    <form className='form' onSubmit={handleSubmit}>
+      <div className="form-control">
+        <label htmlFor='firstName'>Name : </label>
+        <input 
+          type='text' 
+          id='firstName' 
+          name='firstName' 
+          value={firstName} 
+          onChange={(e) => setFirstName(e.target.value)}
+        />
+      </div>
+      <div className="form-control">
+        <label htmlFor='email'>Email : </label>
+        <input
+          type='text' 
+          id='email' 
+          name='email' 
+          value={email} 
+          onChange={(e) => setEmail(e.target.value)}
+        />
+      </div>
+      <button type='submit'>add person</button>
+    </form>
+  </article>);
+};
+
+export default ControlledInputs;
+```
+
+#### Add Item To The List
 
 ### Forms Corresponding Projects
 
