@@ -873,6 +873,8 @@ export default ControlledInputs;
 
 So now let's connect our inputs to the state value. In other words, accessing the data inside the input.
 
+We have to add two values to the input element. One is the attribute and the other is the eventListener.
+
 ### Forms Corresponding Projects
 
 8 Lorem Ipsum Generator
