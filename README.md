@@ -871,9 +871,9 @@ export default ControlledInputs;
 
 ### Controlled Inputs
 
-So now let's connect our inputs to the state value. In other words, accessing the data inside the input.
+So now let's connect our inputs to the state value., as we're typing or submitting. In other words, accessing the data inside the input. So we setup state values for that.
 
-We have to add two values to the input element. One is the attribute and the other is the eventListener.
+So, we setup two values to the input element. One is the attribute and the other is the EventListener. EventListener will fire the callback function each time we type something in the input.
 
 ### Forms Corresponding Projects
 
