@@ -830,6 +830,8 @@ export default ShowHide;
 
 #### /tutorial/4-forms/setup/1-controlled-inputs.js
 
+More specifically we're to cover control inputs, how they are and how they work. And also how we can setup multiple inputs with just one function.
+
 ### Forms Corresponding Projects
 
 8 Lorem Ipsum Generator
