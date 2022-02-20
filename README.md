@@ -927,6 +927,8 @@ export default ControlledInputs;
 
 #### Add Item To The List
 
+So let's see how we can add the data dynamically to list.
+
 ### Forms Corresponding Projects
 
 8 Lorem Ipsum Generator
