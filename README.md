@@ -875,6 +875,8 @@ So now let's connect our inputs to the state value., as we're typing or submitti
 
 So, we setup two attributes to the input element. One is going to be value, and the other is the EventListener, were we're going to setup our callback function. So that, each time we type something in the input.
 
+The onChange function would help us to update the values typed in the form.
+
 ### Forms Corresponding Projects
 
 8 Lorem Ipsum Generator
