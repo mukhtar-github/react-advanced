@@ -6,9 +6,14 @@ import React, { useState } from 'react';
 // value, onChange
 
 const ControlledInputs = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('hello world');
+  };
+
   return (
   <article>
-    <form className='form'>
+    <form className='form' onSubmit={handleSubmit}>
       <div className="form-control">
         <label htmlFor='firstName'>Name : </label>
         <input type='text' id='firstName' name='firstName' />
