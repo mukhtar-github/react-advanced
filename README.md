@@ -828,6 +828,10 @@ export default ShowHide;
 
 ### Forms
 
+#### /tutorial/4-forms/setup/1-controlled-inputs.js
+
+### Forms Corresponding Projects
+
 8 Lorem Ipsum Generator
 9 Color Shades Generator
 10 Grocery Bud
