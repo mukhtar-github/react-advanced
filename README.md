@@ -929,6 +929,8 @@ export default ControlledInputs;
 
 So let's see how we can add the data dynamically to list.
 
+We'll create id when collecting the person object in the array. We can use index instead of id, but it will not be suitable because, we are adding and deleting items in the array.
+
 ### Forms Corresponding Projects
 
 8 Lorem Ipsum Generator
