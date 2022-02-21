@@ -931,7 +931,7 @@ So let's see how we can add the data dynamically to list. We'll return the perso
 
 Because in the list we need unique items, we can either use index instead or id, but index will not be suitable for adding and removing items in an array of objects.
 
-An npm package uid is used to generate unique ids.
+An npm package uid is used to generate unique ids. But instead, we'll cheat a little bit by setting a date id.
 
 ### Forms Corresponding Projects
 
