@@ -927,9 +927,9 @@ export default ControlledInputs;
 
 #### Add Item To The List
 
-So let's see how we can add the data dynamically to list.
+So let's see how we can add the data dynamically to list. We'll return the person object and create id when adding the person object in the array to display.
 
-We'll return the person object and create id when adding the person object in the array, to display. We can use index instead of id, but it will not be suitable because, we are adding and removing items in the array.
+Because in the list we need unique items, we can either use index instead or id, but index will not be suitable for adding and removing items in an array of objects.
 
 ### Forms Corresponding Projects
 
