@@ -14,7 +14,9 @@ const ControlledInputs = () => {
     e.preventDefault();
     if (firstName && email) {
       const person = { firstName, email };
-      console.log(person);
+      setPeople((people) => {
+        return [...people, person];
+      });
     } else {
       console.log('empty values');
     }
