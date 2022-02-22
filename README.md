@@ -1015,6 +1015,89 @@ So it would be better, if we should have one useState and one fuction controllin
 
 We're using Spread operator inside the setPerson function to copy the old values of the person's object first. The we update the properties of the object dynamically.
 
+```javascript
+import React, { useState } from 'react';
+// Vanilla JS
+// const input = document.getElementById('myText');
+// const inputValue = input.value
+
+// React JS
+// value, onChange
+// dynamic object keys
+
+const ControlledInputs = () => {
+  const [person, setPerson] = useState({ firstName: '', email: '', age: ''});
+  const [people, setPeople] = useState([]);
+
+  const handleChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setPerson({ ...person, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (person.firstName && person.email && person.age) {
+      const newPerson = {...person, id: new Date().getTime().toString()};
+      setPeople([...people, newPerson]);
+      setPerson({firstName: '', email: '', age: ''});
+    }
+  };
+
+  return (
+    <>
+      <article>
+        <form className='form' >
+          <div className='form-control'>
+            <label htmlFor='firstName'>Name : </label>
+            <input
+              type='text'
+              id='firstName'
+              name='firstName'
+              value={person.firstName}
+              onChange={handleChange}
+            />
+          </div>
+          <div className='form-control'>
+            <label htmlFor='email'>Email : </label>
+            <input
+              type='email'
+              id='email'
+              name='email'
+              value={person.email}
+              onChange={handleChange}
+            />
+          </div>
+          <div className='form-control'>
+            <label htmlFor='age'>Age : </label>
+            <input
+              type='text'
+              id='age'
+              name='age'
+              value={person.age}
+              onChange={handleChange}
+            />
+          </div>
+          <button type='submit' onClick={handleSubmit}>add person</button>
+        </form>
+        {people.map((person, index) => {
+          const { id, firstName, email, age } = person;
+          return (
+            <div className='item' key={id}>
+              <h4>{firstName}</h4>
+              <p>{age}</p>
+              <p>{email}</p>
+            </div>
+          );
+        })}
+      </article>
+    </>
+  );
+};
+
+export default ControlledInputs;
+```
+
 ### Forms Corresponding Projects
 
 8 Lorem Ipsum Generator
