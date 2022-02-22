@@ -1013,6 +1013,8 @@ Now we're going to look at forms with multiple inputs, not just two or three.
 
 So it would be better, if we should have one useState and one fuction controlling the state. So we can do that by setting up one useState value.
 
+We're using Spread operator inside the setPerson function to copy the old values of the person's object first. The we update the properties of the object dynamically.
+
 ### Forms Corresponding Projects
 
 8 Lorem Ipsum Generator
