@@ -1011,6 +1011,8 @@ export default ControlledInputs;
 
 Now we're going to look at forms with multiple inputs, not just two or three.
 
+So it would be better, if we should have one useState and one fuction controlling the state.
+
 ### Forms Corresponding Projects
 
 8 Lorem Ipsum Generator
