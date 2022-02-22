@@ -19,6 +19,9 @@ const ControlledInputs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (person.firstName && person.email && person.age) {
+      
+    }
   };
 
   return (
