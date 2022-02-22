@@ -9,6 +9,7 @@ import React, { useState } from 'react';
 const ControlledInputs = () => {
   const [firstName, setFirstName] = useState('');
   const [email, setEmail] = useState('');
+  const [person, setPerson] = useState({ firstName: '', email: '', age: ''});
   const [age, setAge] = useState('');
   const [people, setPeople] = useState([]);
 
