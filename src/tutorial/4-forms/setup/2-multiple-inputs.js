@@ -56,8 +56,8 @@ const ControlledInputs = () => {
               type='text'
               id='age'
               name='age'
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={age}
+              onChange={(e) => setAge(e.target.value)}
             />
           </div>
           <button type='submit'>add person</button>
