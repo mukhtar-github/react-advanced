@@ -1009,6 +1009,8 @@ export default ControlledInputs;
 
 #### /tutorial/4-forms/setup/2-multiple-inputs.js
 
+Now we're going to look at forms with multiple inputs, not just two or three.
+
 ### Forms Corresponding Projects
 
 8 Lorem Ipsum Generator
