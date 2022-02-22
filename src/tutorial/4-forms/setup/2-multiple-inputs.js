@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-// JS
+// Vanilla JS
 // const input = document.getElementById('myText');
 // const inputValue = input.value
-// React
+
+// React JS
 // value, onChange
 // dynamic object keys
 
