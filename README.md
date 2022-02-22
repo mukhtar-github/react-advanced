@@ -1005,6 +1005,10 @@ const ControlledInputs = () => {
 export default ControlledInputs;
 ```
 
+### Multiple Inputs
+
+#### /tutorial/4-forms/setup/2-multiple-inputs.js
+
 ### Forms Corresponding Projects
 
 8 Lorem Ipsum Generator
