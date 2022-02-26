@@ -1109,6 +1109,8 @@ export default ControlledInputs;
 
 #### /tutorial/5-useRef/setup/1-useRef-basics.js
 
+useRef works alot more like useState. For *unconrolled inputs*, we use useRef.
+
 ### useRef Corresponding Projects
 
 11 Navbar
