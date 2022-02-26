@@ -9,6 +9,7 @@ const UseRefBasics = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(refContainer.current);
   };
 
   console.log(refContainer);
