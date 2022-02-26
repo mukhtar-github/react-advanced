@@ -1109,7 +1109,7 @@ export default ControlledInputs;
 
 #### /tutorial/5-useRef/setup/1-useRef-basics.js
 
-useRef works alot more like useState. However there's some difference. We use useRef for targeting *DOM elements*, and inturn allows us to setup *uncontrolled inputs*. It preserves values in between the renders.
+useRef works alot more like useState. It preserves values in between the renders. However there're some differences. One of the difference with useState, is that useRef hook does not trigger re-render. We use useRef for targeting *DOM elements*, and inturn allows us to setup *uncontrolled inputs*.
 
 ### useRef Corresponding Projects
 
