@@ -1109,7 +1109,7 @@ export default ControlledInputs;
 
 #### /tutorial/5-useRef/setup/1-useRef-basics.js
 
-useRef works alot more like useState. For *unconrolled inputs*, we use useRef.
+useRef works alot more like useState. We use useRef for *unconrolled inputs*,  and also for targeting DOM elements.
 
 ### useRef Corresponding Projects
 
