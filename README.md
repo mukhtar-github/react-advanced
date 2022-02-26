@@ -1109,7 +1109,7 @@ export default ControlledInputs;
 
 #### /tutorial/5-useRef/setup/1-useRef-basics.js
 
-useRef works alot more like useState. We use useRef for targeting *DOM elements*, and inturn allows us to setup *uncontrolled inputs*.
+useRef works alot more like useState. However there's some difference. We use useRef for targeting *DOM elements*, and inturn allows us to setup *uncontrolled inputs*.
 
 ### useRef Corresponding Projects
 
