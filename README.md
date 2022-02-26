@@ -1113,7 +1113,7 @@ useRef works alot more like useState. It preserves values in between the renders
 
 We use useRef for targeting *DOM elements*, and inturn allows us to setup *uncontrolled inputs*. In the case of our hanle submit function (onSubmit()), we can either place it in the form element or in the button element.
 
-We're going to use the assigned useRef as a ref attribute inside the input element.
+We're going to use the assigned useRef container (refContainer) as a ref attribute inside the input element.
 
 ### useRef Corresponding Projects
 
