@@ -1111,7 +1111,7 @@ export default ControlledInputs;
 
 useRef works alot more like useState. It preserves values in between the renders. However there're some differences. One of the difference with useState, is that useRef hook does not trigger re-render.
 
-We use useRef for targeting *DOM elements*, and inturn allows us to setup *uncontrolled inputs*. In the case of our hanle submit function, we can either place it in the form element or in the button element.
+We use useRef for targeting *DOM elements*, and inturn allows us to setup *uncontrolled inputs*. In the case of our hanle submit function (onSubmit()), we can either place it in the form element or in the button element.
 
 ### useRef Corresponding Projects
 
