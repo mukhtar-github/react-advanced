@@ -9,8 +9,9 @@ const UseRefBasics = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
   };
+
+  console.log(refContainer);
 
   return (
     <>
