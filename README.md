@@ -1161,7 +1161,7 @@ export default UseRefBasics;
 
 11 Navbar
 
-### useReducer
+### useReducer - useState Setup
 
 #### /tutorial/6-useReducer/setup
 
