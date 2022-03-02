@@ -469,7 +469,7 @@ const UseEffectBasics = () => {
     if (value >= 1) {
       document.title = `New Messages(${value})`;
     } 
-  }, [value]);
+  }, [value]);// Only re-run the effect if value changes
 
   useEffect(() => {
     console.log('Hello World');
