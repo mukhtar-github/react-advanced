@@ -1161,7 +1161,11 @@ export default UseRefBasics;
 
 11 Navbar
 
-### useContext
+### useReducer
+
+#### /tutorial/6-useReducer/setup
+
+useReducer is used, whenever we have a more complicated setup.
 
 ### useContext Corresponding Projects
 
