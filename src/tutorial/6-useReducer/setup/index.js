@@ -15,12 +15,15 @@ const Index = () => {
   return (
     <>
       {showModal && <Modal/>}
-      <form onSubmit={handleSubmit}>
-        <input
-          type='text' 
-          value={name} 
-          onChange={(e) => setName(e.target.value)}
-        />
+      <form onSubmit={handleSubmit} className='form'>
+        <div>
+          <input
+            type='text' 
+            value={name} 
+            onChange={(e) => setName(e.target.value)}
+         />
+        </div>
+        <button type='submit'>add</button>
       </form>
     </>
   );
