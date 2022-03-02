@@ -1219,7 +1219,7 @@ export default Index;
 
 ### useReducer - Refactor
 
-
+When we invoke useReducer, we're getting two things back. We're getting th state value, and then we're getting the dispatch function. Similar to useState, but the difference is, in the useReducer, the first first thing that we pass in is the reducer function.
 
 ### useContext Corresponding Projects
 
