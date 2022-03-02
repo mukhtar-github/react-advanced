@@ -10,6 +10,12 @@ const Index = () => {
   const [showModal, setShowModal] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (name) {
+      showModal(true);
+      setPeople([...people, {id: new Date().getTime().toString()}]);
+    } else {
+      showModal(true);
+    }
   };
 
   return (
