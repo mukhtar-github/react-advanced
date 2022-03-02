@@ -1,9 +1,12 @@
 import React, { useState, useReducer } from 'react';
 import Modal from './Modal';
 import { data } from '../../../data';
+
 // reducer function
 
 const Index = () => {
+const [people, setPeople] = useState();
+
   return <h2>useReducer</h2>;
 };
 
