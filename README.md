@@ -1165,7 +1165,7 @@ export default UseRefBasics;
 
 #### /tutorial/6-useReducer/setup
 
-useReducer is used, whenever we have a more complicated setup.
+useReducer is used, whenever we have a more complicated setup as far as the state. Because , essentially it will add more structure to your state.
 
 ### useContext Corresponding Projects
 
