@@ -1165,11 +1165,11 @@ export default UseRefBasics;
 
 #### /tutorial/6-useReducer/setup
 
-useReducer is used, whenever we have a more complicated setup as far as the state. Because , essentially it will add more structure to your state.
+useReducer is used, whenever we have a more complicated setup as far as the state. Because, essentially it will add more structure to your state as our apps gets more complicated.
 
 ### useContext Corresponding Projects
 
-12 Modal and Sidebar
+12 Modal and Sidebar.
 13 Stripe Menus
 
 ### useReducer and useContext
