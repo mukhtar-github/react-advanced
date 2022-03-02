@@ -12,7 +12,9 @@ const Index = () => {
     e.preventDefault();
     if (name) {
       showModal(true);
-      setPeople([...people, {id: new Date().getTime().toString()}]);
+      setPeople([...people, {id: new Date().getTime().toString(),
+        name}]);
+      setName('');
     } else {
       showModal(true);
     }
