@@ -1167,6 +1167,8 @@ export default UseRefBasics;
 
 useReducer is used, whenever we have a more complicated setup as far as the state. Because, essentially it will add more structure to your state as our apps gets more complicated.
 
+Index.js in is the entry point in folders. Where you have many files in a folder, they all meet in the index.js file of that folder.
+
 ### useContext Corresponding Projects
 
 12 Modal and Sidebar.
