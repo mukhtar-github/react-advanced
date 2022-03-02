@@ -8,6 +8,9 @@ const Index = () => {
   const [name, setName] = useState('');
   const [people, setPeople] = useState(data);
   const [showModal, setShowModal] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
 
   return (
     <>
@@ -16,7 +19,7 @@ const Index = () => {
         <input
           type='text' 
           value={name} 
-          onChange={() => setName(e.target.value)}
+          onChange={(e) => setName(e.target.value)}
         />
       </form>
     </>
