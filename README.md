@@ -388,7 +388,7 @@ export default UseStateCounter;
 
 #### /tutorial/2-useEffect/setup/1-useEffect-basics.js
 
-Every time you think of useEffect, think of work outside the component. By defaualt useEffect runs after every re-render.
+Every time you think of useEffect, think of work outside the component. By defaualt useEffect runs after every re-render. useEffect handles all the update by default.
 
 The way useEffect works is by passing in the callback function, and whatever function we place inside the callback function will run after every render.
 
