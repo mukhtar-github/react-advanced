@@ -11,12 +11,12 @@ const Index = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name) {
-      showModal(true);
+      setShowModal(true);
       setPeople([...people, {id: new Date().getTime().toString(),
         name}]);
       setName('');
     } else {
-      showModal(true);
+      setShowModal(true);
     }
   };
 
