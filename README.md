@@ -1221,7 +1221,7 @@ export default Index;
 
 When we invoke useReducer, we're getting two things back. We're getting th state value, and then we're getting the dispatch function. Similar to useState, but the difference is, in the useReducer, the first thing that we pass in is the reducer function.
 
-Another difference is that each and every time you want to do something, you must always use dispatch and it's going to go through the reducer.
+Another difference is that each and every time you want to do something, you must always use dispatch and it's going to go pass through the reducer. And you can think of the reducer funtion as somerhing that takes the old state and takes in something called action, which we're going to cover later.
 
 ### useContext Corresponding Projects
 
