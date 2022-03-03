@@ -1225,6 +1225,64 @@ Another difference is that each and every time you want to do something, you mus
 
 And then speeds back that new state. You can think of action as what are trying to do. Where we have showModal in the useState setup example, is going to be replaced with state in the useReducer, that is the object. And we use the property - isModalOpen, because that is the property that's responsible for showing the modal.
 
+```javascript
+import React, { useState, useReducer } from 'react';
+import Modal from './Modal';
+import { data } from '../../../data';
+
+// reducer function
+const reducer = (state, action) => {
+
+};
+
+const defaultState = {
+  people: [],
+  isModalOpen: false,
+  modalContent: ''
+};
+
+const Index = () => {
+  const [name, setName] = useState('');
+  const [state, dispatch] = useReducer(reducer, defaultState);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (name) {
+      
+    } else {
+      
+    }
+  };
+
+  return (
+    <>
+      {state.isModalOpen && <Modal modalContent={state.modalContent}/>}
+      <form onSubmit={handleSubmit} className='form'>
+        <div>
+          <input
+            type='text' 
+            value={name} 
+            onChange={(e) => setName(e.target.value)}
+         />
+        </div>
+        <button type='submit'>add</button>
+      </form>
+      {state.people.map((person) => {
+        return <div key={person.id}>
+          <h4>{person.name}</h4>
+        </div>
+      })}
+    </>
+  );
+};
+
+export default Index;
+```
+
+### useReducer - Add Item
+
+
+
 ### useContext Corresponding Projects
 
 12 Modal and Sidebar.
