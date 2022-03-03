@@ -1281,7 +1281,7 @@ export default Index;
 
 ### useReducer - Add Item
 
-
+Once we've refactor to basic use reducer setup. Now let's see how the dispatch works
 
 ### useContext Corresponding Projects
 
