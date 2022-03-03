@@ -1281,7 +1281,7 @@ export default Index;
 
 ### useReducer - Add Item
 
-Once we've refactor to basic use reducer setup. Now let's see how the dispatch works
+Once we've refactor to basic use reducer setup. Now let's see how the dispatch works, how the reducer works, and what is action. In order to efect anything in our state, we'll need to dispatch them.
 
 ### useContext Corresponding Projects
 
