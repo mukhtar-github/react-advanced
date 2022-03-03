@@ -20,7 +20,7 @@ const Index = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name) {
-      
+      dispatch({ type: 'TESTING' });
     } else {
       
     }
