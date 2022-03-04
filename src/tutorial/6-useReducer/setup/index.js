@@ -4,7 +4,7 @@ import { data } from '../../../data';
 
 // reducer function
 const reducer = (state, action) => {
-
+  console.log(state, action);
 };
 
 const defaultState = {
