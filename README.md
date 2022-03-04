@@ -1288,7 +1288,7 @@ We always need to pass an object to our dispatch function, with the property by 
 Once you dispatch your action, then in reducer you
 need to handle it. Reducer is taking as parameter, two things, state - right before update, and then what action you want it to do, that's testing.
 
-One thing to keep in mind is that, you always want to return something from reducer. Because, this is going to be a useState where if you don't return anything, non of the functionalities will make sence.
+One thing to keep in mind is that, from reducer, you always want to return some kind of state. Because, this is going to be that use case, where if you don't return, non of the functionalities that you have later, is going to make sence.
 
 ### useContext Corresponding Projects
 
