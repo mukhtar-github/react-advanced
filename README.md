@@ -1286,7 +1286,7 @@ Once we've refactor to basic useReducer setup. Now let's see how the dispatch wo
 We always need to pass an object to our dispatch function, with the property by the name of type. So that is going to be our action. Action is going tobe our object. And then in that object you must have the property by the name of type.  you set it equal a string in uppercase, that's the common practice.
 
 Once you dispatch your action, then in reducer you
-need to handle it. Reducer is taking as parameter, two things, state - right before update, and then what action you want it to do.
+need to handle it. Reducer is taking as parameter, two things, state - right before update, and then what action you want it to do, that's testing.
 
 One thing to keep in mind is that, you always want to return something from reducer. Because, this is going to be a useState where if you don't return anything, non of the functionalities will make sence.
 
