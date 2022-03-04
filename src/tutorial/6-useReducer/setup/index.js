@@ -4,7 +4,15 @@ import { data } from '../../../data';
 
 // reducer function
 const reducer = (state, action) => {
-  console.log(state, action);
+  if (action.type === 'TESTING') {
+    return {
+      ...state, 
+      people: data, 
+      isModalOpen: true, 
+      modalContent: 'Item added'
+    };
+  };
+  return state;
 };
 
 const defaultState = {
