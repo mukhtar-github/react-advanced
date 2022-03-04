@@ -1281,7 +1281,9 @@ export default Index;
 
 ### useReducer - Add Item
 
-Once we've refactor to basic use reducer setup. Now let's see how the dispatch works, how the reducer works, and what is action. In order to efect anything in our state, we'll need to dispatch them.
+Once we've refactor to basic useReducer setup. Now let's see how the dispatch works, how the reducer works, and what is action. In order to efect anything in our state, we'll need to dispatch them.
+
+One thing to keep in mind is that, you always want to return something from reducer. Because, this is going to be a useState where if you don't return anything, non of the functionalities will make sence.
 
 ### useContext Corresponding Projects
 
