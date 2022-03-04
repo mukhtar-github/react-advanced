@@ -4,6 +4,7 @@ import { data } from '../../../data';
 
 // reducer function
 const reducer = (state, action) => {
+  console.log(state);
   if (action.type === 'TESTING') {
     return {
       ...state, 
@@ -11,8 +12,8 @@ const reducer = (state, action) => {
       isModalOpen: true, 
       modalContent: 'Item added'
     };
-  };
-  return state;
+  }
+  throw new Error('no matching action type');
 };
 
 const defaultState = {
