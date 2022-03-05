@@ -6,9 +6,10 @@ import { data } from '../../../data';
 const reducer = (state, action) => {
   console.log(state);
   if (action.type === 'ADD_ITEM') {
+    const newItems = [...state.items, action.payload];
     return {
       ...state, 
-      people: '', 
+      people: newItems, 
       isModalOpen: true, 
       modalContent: 'Item added'
     };
