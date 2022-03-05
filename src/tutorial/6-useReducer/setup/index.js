@@ -6,7 +6,7 @@ import { data } from '../../../data';
 const reducer = (state, action) => {
   console.log(state);
   if (action.type === 'ADD_ITEM') {
-    const newItems = [...state.items, action.payload];
+    const newItems = [...state.people, action.payload];
     return {
       ...state, 
       people: newItems, 
