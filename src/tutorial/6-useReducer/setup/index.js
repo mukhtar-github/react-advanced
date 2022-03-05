@@ -16,7 +16,7 @@ const reducer = (state, action) => {
   } else if (action.type === 'NO_VALUE') {
     return { 
       ...state,
-      showModal: true,
+      isModalOpen: true,
       modalContent: 'please enter value'
     };
   }
