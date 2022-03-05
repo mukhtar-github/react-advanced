@@ -13,6 +13,12 @@ const reducer = (state, action) => {
       isModalOpen: true, 
       modalContent: 'Item added'
     };
+  } else if (action.type === 'NO_VALUE') {
+    return { 
+      ...state,
+      showModal: true,
+      modalContent: 'please enter value'
+    };
   }
   throw new Error('no matching action type');
 };
