@@ -33,6 +33,7 @@ const Index = () => {
       const newItem = { id: new Date().getTime().toString(),
         name};
       dispatch({ type: 'ADD_ITEM', payload: newItem});
+      setName('');
     } else {
       dispatch({ type: 'RANDOM' });
     }
