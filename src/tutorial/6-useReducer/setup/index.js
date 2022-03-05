@@ -5,10 +5,10 @@ import { data } from '../../../data';
 // reducer function
 const reducer = (state, action) => {
   console.log(state);
-  if (action.type === 'TESTING') {
+  if (action.type === 'ADD_ITEM') {
     return {
       ...state, 
-      people: data, 
+      people: '', 
       isModalOpen: true, 
       modalContent: 'Item added'
     };
@@ -29,7 +29,7 @@ const Index = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name) {
-      dispatch({ type: 'TESTING' });
+      dispatch({ type: 'ADD_ITEM' });
     } else {
       dispatch({ type: 'RANDOM' });
     }
