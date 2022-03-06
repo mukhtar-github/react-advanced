@@ -1290,6 +1290,8 @@ need to handle it. Reducer is taking as parameter, two things, state - right bef
 
 One thing to keep in mind is that, from reducer, you always want to return some kind of state. Because, this is going to be that use case, where if you don't return, non of the functionalities that you have later, is going to make sence.
 
+### useReducer - Remove Item
+
 ### useContext Corresponding Projects
 
 12 Modal and Sidebar.
