@@ -1458,6 +1458,12 @@ const Index = () => {
 export default Index;
 ```
 
+### Prop Drilling
+
+#### /tutorial/7-prop-drilling/setup
+
+
+
 ### useContext Corresponding Projects
 
 12 Modal and Sidebar.
