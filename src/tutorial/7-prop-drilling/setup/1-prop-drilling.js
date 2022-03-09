@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Data } from '../../../data';
 
 // more components
 // fix - context api, redux (for more complex cases)
