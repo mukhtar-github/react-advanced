@@ -1460,7 +1460,7 @@ export default Index;
 
 ### Prop Drilling
 
-#### /tutorial/7-prop-drilling/setup
+#### /tutorial/7-prop-drilling/setup/1-prop-drilling.js
 
 Prop Drilling is not an official term. However, it is somewhat of the side effect when you have multiple components, and then you have the big component tree, and then you need to start passing some state from the top component all the way to the bottom of your component tree.
 
