@@ -4,7 +4,6 @@ import { data } from '../../../data';
 
 // reducer function
 const reducer = (state, action) => {
-  console.log(state);
   if (action.type === 'ADD_ITEM') {
     const newPeople = [...state.people, action.payload];
     return {
