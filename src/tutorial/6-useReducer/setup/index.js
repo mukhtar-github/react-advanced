@@ -24,7 +24,10 @@ const reducer = (state, action) => {
     return { ...state, isModalOpen: false };
   }
   if (action.type === 'REMOVE_ITEM') {
-    const newPeople = state.people.filter((person) => person.id !== action.payload);
+    const newPeople = state.people.filter(
+      (person) => person.id !== action.payload
+    );
+    return { ...state, people: newPeople };
   }
   throw new Error('no matching action type');
 };
