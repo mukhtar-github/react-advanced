@@ -1464,7 +1464,7 @@ export default Index;
 
 Prop Drilling is not an official term. However, it is somewhat of the side effect when you have multiple components, and then you have the big component tree, and then you need to start passing some state from the top component all the way to the bottom of your component tree.
 
-And the eason why we'll cover Prop Drilling first, is because in the next tutorial, the useContext, we'll see how useContext fixes that.
+And the reason why we'll cover Prop Drilling first, is because in the next tutorial, the useContext, we'll see how useContext fixes that. More specifically, we'll look at the context API that is design for that, and then useContext hook is the new way how we can access that context.
 
 ### useContext Corresponding Projects
 
