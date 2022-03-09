@@ -1462,7 +1462,7 @@ export default Index;
 
 #### /tutorial/7-prop-drilling/setup
 
-
+Prop Drilling is not an official term. However, it is some what of the side effect when you have multiple components, and then you have the big component tree, and then you need to start passing some state from the top component all the way to the bottom of your component tree.
 
 ### useContext Corresponding Projects
 
