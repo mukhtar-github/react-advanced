@@ -1365,6 +1365,8 @@ export default Index;
 
 ### useReducer - Remove Item
 
+Since reducers do have a lot of functionalities, we do move them to a separeate file.
+
 ### useContext Corresponding Projects
 
 12 Modal and Sidebar.
