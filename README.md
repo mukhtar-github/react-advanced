@@ -1530,7 +1530,7 @@ We'll have two components - the Provider and the Consumer. With the arrival of u
 
 You will essentially get two components back once you setup the createContext. The way you access those components is you're going to go with PersonContext.Provider or the Consumer.
 
-Provider works as a distributor. What you would want to do is, since ContextAPI is our root component, where the rest of the components are rendered. So you'll need to find that root component and then return of that root component you would want to wrap in PersonContext and then the provider.
+Provider works as a distributor. What you would want to do is, since ContextAPI is our root component, where the rest of the components are rendered. So you'll need to find that root component and the return of that root component you would want to wrap in PersonContext and then the provider.
 
 ### useReducer and useContext Corresponding Projects
 

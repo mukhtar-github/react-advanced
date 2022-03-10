@@ -3,7 +3,7 @@ import { data } from '../../../data';
 // more components
 // fix - context api, redux (for more complex cases)
 
-const PersonConrext = React.createContext();
+const PersonContext = React.createContext();
 // two components - Provider, Consumer
 
 const ContextAPI = () => {
@@ -14,10 +14,10 @@ const ContextAPI = () => {
     });
   };
   return (
-    <>
+    <PersonContext.Provider>
       <h3>prop drilling</h3>
       <List people={people} removePerson={removePerson} />
-    </>
+    </PersonContext.Provider>
   );
 };
 
