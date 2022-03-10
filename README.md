@@ -1466,7 +1466,7 @@ Prop Drilling is not an official term. However, it is somewhat of the side effec
 
 And the reason why we'll cover Prop Drilling first, is because in the next tutorial, the useContext, we'll see how useContext fixes that. More specifically, we'll look at the context API that is design for that, and then useContext hook is the new way how we can access that context.
 
-When returning a List, we need to pass in a key property inside the component element. We can also pass our functions as props inside the component element, we're not just limited to state values.
+When returning a List, we need to pass in a key property inside the component element. We can also pass our functions as props inside the component element, we're not just limited to state values. And we need to distructure the function - removePerson, as well in the component function - List.
 
 ### useContext Corresponding Projects
 
