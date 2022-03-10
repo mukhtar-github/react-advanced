@@ -1526,7 +1526,11 @@ export default PropDrilling;
 
 #### /tutorial/8-useContext/setup/1-context-api.js
 
-We'll have two components - the Provider and the Consumer. With the arrival of useContext, we won't use the Consumer. Previously, before the hook was introduced, we were using the Consumer, however, now we don't have to. You will essentially get two components back once you setup the createContext. The way you access those components is you're going to go with PersonContext.Provider or the Consumer.
+We'll have two components - the Provider and the Consumer. With the arrival of useContext, we won't use the Consumer. Previously, before the hook was introduced, we were using the Consumer, however, now we don't have to.
+
+You will essentially get two components back once you setup the createContext. The way you access those components is you're going to go with PersonContext.Provider or the Consumer.
+
+Provider works as a distributor. What you would want to do is, since ContextAPI is our root component, where the rest of the components are rendered. So you'll need to find that root component and then return of that root component you would want to wrap in PersonContext and then the provider.
 
 ### useReducer and useContext Corresponding Projects
 
