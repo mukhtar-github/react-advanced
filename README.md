@@ -1466,6 +1466,8 @@ Prop Drilling is not an official term. However, it is somewhat of the side effec
 
 And the reason why we'll cover Prop Drilling first, is because in the next tutorial, the useContext, we'll see how useContext fixes that. More specifically, we'll look at the context API that is design for that, and then useContext hook is the new way how we can access that context.
 
+When returning a List, we need to pass in a key property inside the component element.
+
 ### useContext Corresponding Projects
 
 12 Modal and Sidebar.
