@@ -30,7 +30,7 @@ const SinglePerson = ({ id, name }) => {
     <div className='item'>
       <h4>single item</h4>
     </div>
-  )
-}
+  );
+};
 
 export default PropDrilling;
