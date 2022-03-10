@@ -1524,6 +1524,8 @@ export default PropDrilling;
 
 ### Context API - useContext
 
+#### /tutorial/8-useContext/setup/1-context-api.js
+
 ### useReducer and useContext Corresponding Projects
 
 12 Modal and Sidebar.
