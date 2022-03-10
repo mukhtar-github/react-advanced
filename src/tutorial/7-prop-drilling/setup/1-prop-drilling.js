@@ -21,20 +21,22 @@ const PropDrilling = () => {
   );
 };
 
-const List = ({ people }) => {
+const List = ({ people, removePerson }) => {
   return (
     <>
       {people.map((person) => {
-        return <SinglePerson key={person.id} />;
+        return <SinglePerson key={person.id} {...person}
+        removePerson={removePerson} />;
       })}
     </>
   );
 };
 
-const SinglePerson = ({ id, name }) => {
+const SinglePerson = ({ id, name, removePerson }) => {
   return (
     <div className='item'>
-      <h4>single item</h4>
+      <h4>{name}</h4>
+      <button onClick={() => removePerson(id)}></button>
     </div>
   );
 };
