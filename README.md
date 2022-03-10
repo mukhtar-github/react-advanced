@@ -1470,6 +1470,58 @@ When returning a List, we need to pass in a key property inside the component el
 
 The idea of prop drilling here is that our List component, technically does not need to have access to the removePerson function, but we have no other way to pass down our function into the SinglePerson unless we actually pass it through the List, and that is what prop drilling is all about. So context api is used for this type of scenario, so we can avoid prop drilling.
 
+```javascript
+import React, { useState } from 'react';
+import { data } from '../../../data';
+
+// more components
+// fix - context api, redux (for more complex cases)
+
+const PropDrilling = () => {
+  const [people, setPeople] = useState(data);
+
+  const removePerson = (id) => {
+    setPeople((people) => {
+      return people.filter((person) => person.id !== id);
+    });
+  };
+  
+  return (
+  <section>
+    <h3>prop drilling</h3>
+    <List people={people} removePerson={removePerson} />
+  </section>
+  );
+};
+
+const List = ({ people, removePerson }) => {
+  return (
+    <>
+      {people.map((person) => {
+        return (
+          <SinglePerson
+            key={person.id}
+            {...person}
+            removePerson={removePerson}
+          />
+        );
+      })}
+    </>
+  );
+};
+
+const SinglePerson = ({ id, name, removePerson }) => {
+  return (
+    <div className='item'>
+      <h4>{name}</h4>
+      <button onClick={() => removePerson(id)}>remove</button>
+    </div>
+  );
+};
+
+export default PropDrilling;
+```
+
 ### useContext Corresponding Projects
 
 12 Modal and Sidebar.
