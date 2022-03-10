@@ -1532,6 +1532,8 @@ You will essentially get two components back once you setup the createContext. T
 
 Provider works as a distributor. What you would want to do is, since ContextAPI is our root component, where the rest of the components are rendered. So you'll need to find that root component and the return of that root component you would want to wrap in PersonContext and then the provider.
 
+So why is that important, it's because in the Provider, we have the value prop, and why that is really cool, is that we can pass whatever we want into the value prop.
+
 ### useReducer and useContext Corresponding Projects
 
 12 Modal and Sidebar.
