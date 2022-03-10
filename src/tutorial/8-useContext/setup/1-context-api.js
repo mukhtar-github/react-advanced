@@ -3,6 +3,9 @@ import { data } from '../../../data';
 // more components
 // fix - context api, redux (for more complex cases)
 
+const PersonConrext = React.createContext();
+// two components - Provider, Consumer
+
 const ContextAPI = () => {
   const [people, setPeople] = useState(data);
   const removePerson = (id) => {

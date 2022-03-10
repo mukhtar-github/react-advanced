@@ -1526,6 +1526,8 @@ export default PropDrilling;
 
 #### /tutorial/8-useContext/setup/1-context-api.js
 
+We'll have two componnts - the Provider and the Consumer. With the arrival of useContext, wec won't use the Consumer. Previously, before the hook was introduced, we were using the Consumer, however, now we don't have to.
+
 ### useReducer and useContext Corresponding Projects
 
 12 Modal and Sidebar.
