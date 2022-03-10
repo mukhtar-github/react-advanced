@@ -1526,7 +1526,7 @@ export default PropDrilling;
 
 #### /tutorial/8-useContext/setup/1-context-api.js
 
-We'll have two componnts - the Provider and the Consumer. With the arrival of useContext, wec won't use the Consumer. Previously, before the hook was introduced, we were using the Consumer, however, now we don't have to.
+We'll have two components - the Provider and the Consumer. With the arrival of useContext, we won't use the Consumer. Previously, before the hook was introduced, we were using the Consumer, however, now we don't have to. You will essentially get two components back once you setup the createContext.
 
 ### useReducer and useContext Corresponding Projects
 
