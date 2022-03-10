@@ -1468,6 +1468,8 @@ And the reason why we'll cover Prop Drilling first, is because in the next tutor
 
 When returning a List, we need to pass in a key property inside the component element. We can also pass our functions as props inside the component element, we're not just limited to state values. And we need to distructure the function - removePerson, as well in the component function - List.
 
+The idea of prop drilling here is that our List component, technically does not need to have access to the removePerson function, but we have no other way to pass down our function into the SinglePerson unless we actually pass it through the List, and that is what prop drilling is all about. So context api is used for this type of scenario.
+
 ### useContext Corresponding Projects
 
 12 Modal and Sidebar.
