@@ -1524,13 +1524,10 @@ export default PropDrilling;
 
 ### Context API - useContext
 
-### useContext Corresponding Projects
+### useReducer and useContext Corresponding Projects
 
 12 Modal and Sidebar.
 13 Stripe Menus
-
-### useReducer and useContext
-
 14 Cart
 
 ### React Router
