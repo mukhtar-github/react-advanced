@@ -1522,6 +1522,8 @@ const SinglePerson = ({ id, name, removePerson }) => {
 export default PropDrilling;
 ```
 
+### Context API - useContext
+
 ### useContext Corresponding Projects
 
 12 Modal and Sidebar.
