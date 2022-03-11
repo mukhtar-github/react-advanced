@@ -1587,7 +1587,7 @@ const SinglePerson = ({ id, name, removePerson }) => {
 
 export default ContextAPI;
 
-// After removing all the instances of removePerson
+// After removing all the instances of removePerson as props and as parameter
 ```
 
 ### useReducer and useContext Corresponding Projects
