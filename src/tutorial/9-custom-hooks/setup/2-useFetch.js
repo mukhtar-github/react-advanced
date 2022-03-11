@@ -14,4 +14,5 @@ export const useFetch = () => {
   useEffect(() => {
     getProducts();
   }, []);
+  return { loading, products};
 };
