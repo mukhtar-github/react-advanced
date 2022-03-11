@@ -1652,7 +1652,7 @@ export default ContextAPI;
 
 ### Custom Hook - useFetch
 
-#### /tutorial/9-custom-hooks/setup
+#### /tutorial/9-custom-hooks/setup/1-fetch-example.js
 
 Essentially custom hooks allows us to reuse the functionality. We're not talking about reusing HTML elements, we already can do that with components. We're talking about the functionality. Whether that is fetching data, saving to local storage, and tht sort of things.
 
