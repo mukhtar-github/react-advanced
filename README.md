@@ -1534,7 +1534,7 @@ Provider works as a distributor. What you would want to do is, since ContextAPI 
 
 So why is that important, it's because in the Provider, we have the value prop, and why that is really cool, is that we can pass whatever we want into the value prop. And what's even more cool is that we can also use useContext to access this value, whatever it is.
 
-So if we'll have two or three more components that are insied the SinglePerson, I will be still be able to access them.
+So if we'll have two or three more components that are inside the SinglePerson component, we'll still be able to access them.
 
 ```javascript
 import React, { useState, useContext } from 'react';
