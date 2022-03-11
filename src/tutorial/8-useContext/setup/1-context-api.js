@@ -38,7 +38,6 @@ const List = ({ people }) => {
 
 const SinglePerson = ({ id, name }) => {
   const { removePerson } = useContext(PersonContext);
-  console.log(data);
   return (
     <div className='item'>
       <h4>{name}</h4>
