@@ -1650,4 +1650,6 @@ export default ContextAPI;
 13 Stripe Menus
 14 Cart
 
+### Custom Hook - useFetch
+
 ### React Router
