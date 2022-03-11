@@ -1652,4 +1652,8 @@ export default ContextAPI;
 
 ### Custom Hook - useFetch
 
+#### /tutorial/9-custom-hooks/setup
+
+Essentially custom hooks allows us to reuse the functionality. We're not talking about reusing HTML elements, we already can do that with components.
+
 ### React Router
