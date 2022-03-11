@@ -15,7 +15,7 @@ const ContextAPI = () => {
   };
   return (
     <PersonContext.Provider value={{ removePerson, people }}>
-      <h3>prop drilling</h3>
+      <h3>ContextAPI / useContext</h3>
       <List />
     </PersonContext.Provider>
   );
