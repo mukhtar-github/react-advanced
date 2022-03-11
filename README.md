@@ -1656,6 +1656,6 @@ export default ContextAPI;
 
 Essentially custom hooks allows us to reuse a functionality. We're not talking about reusing HTML elements, we already can do that with components. We're talking about a functionality, whether that is fetching data, saving to local storage, and that sort of things.
 
-We are trying to come up with functionality that we can reuse.
+We are trying to come up with functionality that we can reuse. For example, if we should have another component that needs to fetch data, we don't need to duplicate our data fetching function.
 
 ### React Router
