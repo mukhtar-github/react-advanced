@@ -16,12 +16,12 @@ const ContextAPI = () => {
   return (
     <PersonContext.Provider value={{removePerson}}>
       <h3>prop drilling</h3>
-      <List people={people} removePerson={removePerson} />
+      <List people={people} />
     </PersonContext.Provider>
   );
 };
 
-const List = ({ people, removePerson }) => {
+const List = ({ people }) => {
   return (
     <>
       {people.map((person) => {
@@ -29,7 +29,6 @@ const List = ({ people, removePerson }) => {
           <SinglePerson
             key={person.id}
             {...person}
-            removePerson={removePerson}
           />
         );
       })}
