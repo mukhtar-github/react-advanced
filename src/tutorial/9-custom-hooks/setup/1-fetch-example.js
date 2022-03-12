@@ -11,7 +11,7 @@ const Example = () => {
     <div>
       <h2>{loading ? 'loading...' : 'data'}</h2>
     </div>
-  )
-}
+  );
+};
 
 export default Example;
