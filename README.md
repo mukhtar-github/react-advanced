@@ -1752,4 +1752,8 @@ const Product = ({ image, name, price }) => {
 export default Product;
 ```
 
+### PropTypes -  Images
+
+
+
 ### React Router
