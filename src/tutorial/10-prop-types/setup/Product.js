@@ -8,7 +8,7 @@ const Product = ({ image, name, price }) => {
 
   return (
     <article className='product'>
-      <img src={url || defaultImage} alt={name} />
+      <img src={url || defaultImage} alt={name || 'default name'} />
       <h4>{name}</h4>
       <p>${price || 3.99}</p>
     </article>
