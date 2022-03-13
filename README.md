@@ -1658,12 +1658,12 @@ Essentially custom hooks allows us to reuse a functionality. We're not talking a
 
 We are trying to come up with functionality that we can reuse. For example, if we should have another component that needs to fetch data, we don't need to duplicate our data fetching function.
 
-Our functionality is stuck away in a different place, that's in the custom hook. So if we want to reuse it, every time we want to fetch data, instead of using the useState and setting up the loading and the other things, I will just call call useFetch and pass the URL.
+Our functionality is stuck away in a different place, that is in the custom hook. So if we want to reuse it, every time we want to fetch data, instead of using the useState and setting up the loading and the other things, I will just call call useFetch and pass the URL.
 
 And from the function, we'll get back two things, the loading as well as the products. And since it is a custom hook, it has to have the use word attached to it, because we're not allowed to use the hook inside the regular function. It's either the function needs to be a component or it's need to be a custom hook.
 
 ```javascript
-// 
+// Custom Hook
 import { useState, useEffect } from 'react';
 
 export const useFetch = (url) => {
@@ -1681,6 +1681,23 @@ export const useFetch = (url) => {
     }, [url]);
     return { loading, products};
 };
+
+// Component Function
+import { useFetch } from './2-useFetch.js';
+
+const url = 'https://course-api.com/javascript-store-products';
+
+const Example = () => {
+  const { loading, products } = useFetch(url);
+  console.log(products);
+  return (
+    <div>
+      <h2>{loading ? 'loading...' : 'data'}</h2>
+    </div>
+  );
+};
+
+export default Example;
 ```
 
 ### React Router
