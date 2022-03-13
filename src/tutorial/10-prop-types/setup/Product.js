@@ -13,6 +13,8 @@ const Product = ({ image, name, price }) => {
   );
 };
 
-Product.propTypes;
+Product.propTypes = {
+  image: PropTypes.object.isRequired
+};
 
 export default Product;
