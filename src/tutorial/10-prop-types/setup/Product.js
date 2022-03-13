@@ -4,7 +4,7 @@ import defaultImage from '../../../assets/default-image.jpeg';
 
 
 const Product = ({ image, name, price }) => {
-  cosnt url = image && image.url;
+  const url = image && image.url;
 
   return (
     <article className='product'>
