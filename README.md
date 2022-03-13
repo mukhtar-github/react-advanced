@@ -1817,4 +1817,6 @@ Product.defaultProps = {
 export default Product;
 ```
 
+### PropTypes -  Default Values
+
 ### React Router
