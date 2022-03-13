@@ -1700,4 +1700,8 @@ const Example = () => {
 export default Example;
 ```
 
+### PropTypes -  Setup
+
+#### /tutorial/10-prop-types/setup/index.js
+
 ### React Router
