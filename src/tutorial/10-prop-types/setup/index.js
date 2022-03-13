@@ -11,6 +11,10 @@ const Index = () => {
       <h2>products</h2>
       <section className='products'>
         {products.map((product) => {
+          // for each and every product, we're returning a Product component
+          // then we need to pass in the key prop,
+          // and then we do the object spread operator, where we pass in all the properties for
+          // each and every product into the Product component.
           return <Product key={product.id} {...product} />
         })}
       </section>
