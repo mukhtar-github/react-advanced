@@ -1658,7 +1658,10 @@ Essentially custom hooks allows us to reuse a functionality. We're not talking a
 
 We are trying to come up with functionality that we can reuse. For example, if we should have another component that needs to fetch data, we don't need to duplicate our data fetching function.
 
+Our functionality is stuck away in a different place, that's in the custom hook. So if we want to reuse it, every time we want to fetch data, instead of using the useState and setting up the loading and the other things, I will just call call useFetch and pass the URL. And fom the function, we'll get back two things, the loading as well as the products.
+
 ```javascript
+// 
 import { useState, useEffect } from 'react';
 
 export const useFetch = (url) => {
