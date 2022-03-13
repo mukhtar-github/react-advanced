@@ -1,11 +1,11 @@
-
-import { useFetch } from './tutorial/9-custom-hooks/setup/2-useFetch.js';
+import { useFetch } from './2-useFetch.js';
 
 // ATTENTION!!!!!!!!!!
 // I SWITCHED TO PERMANENT DOMAIN
 const url = 'https://course-api.com/javascript-store-products';
 
 const Example = () => {
+  const { loading, products } = useFetch(url);
   console.log(products);
   return (
     <div>
