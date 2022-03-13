@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Product = ({ image, name, price }) => {
   console.log({image, name, price});
@@ -11,5 +12,7 @@ const Product = ({ image, name, price }) => {
     </article>
   );
 };
+
+Product.propTypes;
 
 export default Product;

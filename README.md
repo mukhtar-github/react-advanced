@@ -1754,6 +1754,6 @@ export default Product;
 
 ### PropTypes -  Images
 
-
+In order to set propTypes, we have to setup a propType property on the component.
 
 ### React Router
