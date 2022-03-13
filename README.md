@@ -1704,4 +1704,6 @@ export default Example;
 
 #### /tutorial/10-prop-types/setup/index.js
 
+PropTypes allows us to validate our props, the props that we're passing into components.
+
 ### React Router
