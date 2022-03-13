@@ -20,6 +20,7 @@ Product.propTypes = {
 };
 
 Product.defaultProps = {
+  //image: defaultImage,
   name: 'dafault name',
   price: 3.99
 };
