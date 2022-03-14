@@ -1,5 +1,5 @@
 import React from 'react';
-import Setup from './tutorial/10-prop-types/setup/index.js';
+import Setup from './tutorial/11-react-router/final';
 
 function App() {
   return (
