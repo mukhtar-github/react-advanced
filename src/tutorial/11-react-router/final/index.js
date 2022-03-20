@@ -1,6 +1,6 @@
 import React from 'react';
 // react router
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // pages
 import Home from './Home';
 import About from './About';
@@ -9,12 +9,11 @@ import Error from './Error';
 import Person from './Person';
 // navbar
 import Navbar from './Navbar';
-
 const ReactRouterSetup = () => {
   return (
     <Router>
       <Navbar />
-      <Routes>
+      <Switch>
         <Route exact path='/'>
           <Home />
         </Route>
@@ -28,7 +27,7 @@ const ReactRouterSetup = () => {
         <Route path='*'>
           <Error />
         </Route>
-      </Routes>
+      </Switch>
     </Router>
   );
 };
