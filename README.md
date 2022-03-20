@@ -1864,4 +1864,4 @@ The index.js is where we're setting up our react router, and then the Navbar fil
 
 > For a React component, props are the input, and an element tree is the output. The returned element tree can contain both elements describing DOM nodes, and elements describing other components. This lets you compose independent parts of UI without relying on their internal DOM structure.
 
-We set our pages inside a Route, and then we have a path property (prop), this is where we showcase what is going to be our URL. And the first one is the home page, and for the home page we just go with '/', that just means the domain name for our application.
+We set our pages inside a Route, and then we have a path property (prop), this is where we showcase what is going to be our URL. And the first one is the home page, and for the home page we just go with '/', that just means the domain name for our application. When we want the exact page to display in our browser, we set the exact prop in the Route.
