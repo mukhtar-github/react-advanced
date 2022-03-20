@@ -1900,6 +1900,41 @@ export default ReactRouterSetup;
 
 ### React Router - Error and Switch Component
 
-We will talk about Error pages and why we'll want to use Switch component as well.
+We will talk about Error pages and why we'll want to use Switch component as well. We'll set the path to '*' in the Route of the Error page. What star means is that, the Error page will always match. And that is where the Switch component comes into play. So inside the Router, we'll set the Switch component, and we'll place all our Route inside the Switch. And with a Switch component, only the first Route that matches is displayed.
 
-In the Route of the Error page, we'll set the path to '*'. What star means is that, the Error page will always match. And that is where the Switch component comes into play. So inside the Router, we set the Switch component, and we place all our Route inside the Switch. And with a Switch component, only the first one that matches is displayed.
+```javascript
+import React from 'react';
+// react router
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// pages
+import Home from './Home';
+import About from './About';
+import People from './People';
+import Error from './Error';
+import Person from './Person';
+// navbar
+import Navbar from './Navbar';
+
+const ReactRouterSetup = () => {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path='/'>
+        <Home />
+        </Route>
+        <Route path='/about'>
+          <About />
+        </Route>
+        <Route path='/people'>
+          <People />
+        </Route>
+        <Route path='*'>
+          <Error />
+        </Route>
+      </Switch>
+    </Router>
+  );
+};
+
+export default ReactRouterSetup;
+```
