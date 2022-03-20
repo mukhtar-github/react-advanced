@@ -14,7 +14,13 @@ const ReactRouterSetup = () => {
   return (
     <Router>
       <Route path='/'>
-
+        <Home />
+      </Route>
+      <Route path='/about'>
+        <About />
+      </Route>
+      <Route path='/people'>
+        <People />
       </Route>
     </Router>
   );
