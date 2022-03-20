@@ -1866,8 +1866,6 @@ The index.js is where we're setting up our react router, and then the Navbar fil
 
 We set our pages inside a Route, and then we have a path property (prop), this is where we showcase what is going to be our URL. And the first one is the home page, and for the home page we just go with '/', that just means the domain name for our application. When we want the exact page to display in our browser, we set the exact prop in the Routes.
 
-### React Router - Error and Switch Component
-
 ```javascript
 import React from 'react';
 // react router
@@ -1899,3 +1897,9 @@ const ReactRouterSetup = () => {
 
 export default ReactRouterSetup;
 ```
+
+### React Router - Error and Switch Component
+
+We will talk about Error pages and why we'll want to use Switch component as well.
+
+The Error page will be displayed whenever there is an error in the url.
