@@ -1941,3 +1941,4 @@ export default ReactRouterSetup;
 
 ### React Router - Links
 
+So we'll place our Navbar inside the the Router. And please don't place it within the Switch component.

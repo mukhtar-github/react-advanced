@@ -1,6 +1,6 @@
 import React from 'react';
 // react router
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // pages
 import Home from './Home';
 import About from './About';
@@ -13,6 +13,7 @@ import Navbar from './Navbar';
 const ReactRouterSetup = () => {
   return (
     <Router>
+      <Navbar />
       <Switch>
         <Route exact path='/'>
         <Home />
