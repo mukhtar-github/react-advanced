@@ -1902,4 +1902,4 @@ export default ReactRouterSetup;
 
 We will talk about Error pages and why we'll want to use Switch component as well.
 
-The Error page will be displayed whenever there is an error in the url.
+In the Route the Error page, we'll set the path to '*'. What star means is that, the Error page will always match.
