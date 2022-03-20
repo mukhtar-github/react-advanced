@@ -1859,3 +1859,5 @@ export default Product;
 #### /tutorial/11-react-router/setup
 
 When it comes to real apps, it's nice to have multiple pages. When we talk about Javascript frameworks, we're not talking about traditional HTML pages. In that case, we have a new term - a sinlge page application. Which just means that we have our one page, in this case where we have div with an id of root. And instead of going back to a server and requesting info about the pages where the user navigates, we setup a routing on the client side, without the page refreshing.
+
+The index.js is where we're setting up our react router, and then the Navbar fileis where we display the links.
