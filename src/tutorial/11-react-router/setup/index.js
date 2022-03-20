@@ -11,7 +11,13 @@ import Person from './Person';
 import Navbar from './Navbar';
 
 const ReactRouterSetup = () => {
-  return (<h2>react router</h2>);
+  return (
+    <Router>
+      <Route path='/'>
+
+      </Route>
+    </Router>
+  );
 };
 
 export default ReactRouterSetup;
