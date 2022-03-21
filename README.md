@@ -1990,6 +1990,91 @@ So let's cover how we can deal with a list. In our case, we have the list of peo
 
 We'll setup a Route in the index.js file above the Error Route. And this Route's path is going to have a URL Parameter '/:id', the beginning path can be that of Home '/', or People '/people/:id' or any prefered path to begin with, then followed by the id, name or whatever. And then instead, we don't place our component inside the Route this time, we set the children prop, and then setup which component we'll want to display. In this case we'll setup the Person component to be our placeholder.
 
-We'll then setup the Link in the People's component, the 'to' is going to be setup dynamically, that is by setting up curly braces, and then we go with a template string, and we're going to be navigating to a person. And the reason why we're adding person, is because in the Person Route inside index.js file, we added the person's path, and they both have to match.
+We'll then setup the Link in the People's component, the 'to' is going to be setup dynamically, that is by setting up curly braces, and then we go with a template string, and we're going to be navigating to a person. And the reason why we're adding person, is because in the Person Route inside index.js file, we added the person's path, and they both have to match. useParams hook from react-router-dom allows us to access the parameters.
 
-useParams hook from react-router-dom allows us to access the parameters.
+```javascript
+import React from 'react';
+// react router
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// pages
+import Home from './Home';
+import About from './About';
+import People from './People';
+import Error from './Error';
+import Person from './Person';
+// navbar
+import Navbar from './Navbar';
+
+const ReactRouterSetup = () => {
+  return (
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route exact path='/'>
+        <Home />
+        </Route>
+        <Route path='/about'>
+          <About />
+        </Route>
+        <Route path='/people'>
+          <People />
+        </Route>
+        <Route path='/person/:id' children={<Person />}></Route>
+        <Route path='*'>
+          <Error />
+        </Route>
+      </Switch>
+    </Router>
+  );
+};
+
+export default ReactRouterSetup;
+
+import React, { useState } from 'react';
+import { data } from '../../../data';
+import { Link } from 'react-router-dom';
+
+const People = () => {
+  const [people, setPeople] = useState(data);
+  return (
+    <div>
+      <h1>People Page</h1>
+      {people.map((person) => {
+        return (
+          <div key={person.id} className='item'>
+            <h4>{person.name}</h4>
+            <Link to={`/person/${person.id}`}>Learn More</Link>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+export default People;
+
+import React, { useState, useEffect } from 'react';
+import { data } from '../../../data';
+import { Link, useParams } from 'react-router-dom';
+
+const Person = () => {
+  const [name, setName] = useState('default name');
+  const {id} = useParams();
+
+  useEffect(() => {
+    const newPerson = data.find((person) => person.id === parseInt(id));
+    setName(newPerson.name);
+  }, []);
+
+  return (
+    <div>
+      <h1>{name}</h1>
+      <Link to='/people' className='btn'>
+        Back to People
+      </Link>
+    </div>
+  );
+};
+
+export default Person;
+```
