@@ -2079,6 +2079,12 @@ const Person = () => {
 export default Person;
 ```
 
-### Memo - useMemo- useCallback
+### React Optimization Warning
 
 #### /tutorial/12-memo-useMemo-useCallback
+
+React is fast by default, and by this statement, you should'nt just start optimizing. This is because optimization add their own cost by using more memory space, ect.
+
+> UseCallback is used to optimize the rendering behavior of your React function components, while useMemo is used to memoize expensive functions to avoid having to call them on every render.
+
+Memoizing - caching results(remember).
