@@ -1986,4 +1986,6 @@ export default Error;
 
 ### React Router - URL Params and Placeholder
 
-So let's cover how we can deal with a list. In our case, we have the list of people. We'll setup a placeholder where we can imaging that this is a list of blog post, or list of products, just some kind of list of items. So that once we click on that specific item, we'll go directly to the item's page.
+So let's cover how we can deal with a list. In our case, we have the list of people. We'll setup a placeholder where we can imaging that this is a list of blog post, or list of products, just some kind of list of items. And then, once we click on that one specific item, we'll go to that placeholder's page. So essencially, we don't have to create four different pages for each of our item in people's list. We'll just create one placeholder, regardless of how many pages the list may be.
+
+We'll setup a Route in the index.js file above the Error Route. And this Route's path is going to have a URL Parameter '/:id', the beginning path can be that of Home '/', or People '/people/:id' or any prefered path to begin with, then followed by the id, name or whatever. And then instead, we don't place our component inside the Route this time, we set the children prop, and then setup which component we'll want to display. In this case we setup the Person component to be our placeholder.
