@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useCallback, useMemo } from 'react'
-import { useFetch } from '../../9-custom-hooks/final/2-useFetch'
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import { useFetch } from '../../9-custom-hooks/final/2-useFetch';
 
 // ATTENTION!!!!!!!!!!
 // I SWITCHED TO PERMANENT DOMAIN
@@ -8,8 +8,8 @@ const url = 'https://course-api.com/javascript-store-products'
 // every time props or state changes, component re-renders
 
 const Index = () => {
-  const { products } = useFetch(url)
-  const [count, setCount] = useState(0)
+  const { products } = useFetch(url);
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -20,7 +20,7 @@ const Index = () => {
       <BigList products={products} />
     </>
   )
-}
+};
 
 const BigList = ({ products }) => {
   return (
@@ -30,7 +30,7 @@ const BigList = ({ products }) => {
       })}
     </section>
   )
-}
+};
 
 const SingleProduct = ({ fields }) => {
   let { name, price } = fields
@@ -44,5 +44,6 @@ const SingleProduct = ({ fields }) => {
       <p>${price}</p>
     </article>
   )
-}
-export default Index
+};
+
+export default Index;
