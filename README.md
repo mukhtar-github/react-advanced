@@ -1941,4 +1941,49 @@ export default ReactRouterSetup;
 
 ### React Router - Links
 
-So we'll place the Navbar component inside the Router. And please don't place it within the Switch component. In the return of our Navbar component, we'll setup an un-ordered list and we placed list item inside it. Then inside the list, we'll place the Link which we've imported from the react-router-dom. And there is a specific prop 'to' in the Link component, and this is where we specifically need to say where we want to navigate. So let,s go with a Home page, i.e '/'.
+So we'll place the Navbar component inside the Router. And please don't place it within the Switch component. In the return of our Navbar component, we'll setup an un-ordered list and we placed list item inside it. Then inside the list, we'll place the Link which we've imported from the react-router-dom. And there is a specific prop 'to' in the Link component, and this is where we specifically need to say where we want to navigate. So let's go with a Home page, i.e '/'.
+
+```javascript
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const Navbar = () => {
+  return( 
+    <nav>
+      <ul>
+        <li>
+          <Link to='/'>Home</Link>
+        </li>
+        <li>
+          <Link to='/about'>About</Link>
+        </li>
+        <li>
+          <Link to='/people'>People</Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;
+
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const Error = () => {
+  return (
+    <div>
+      <h1>Error Page</h1>
+      <Link to='/' className='btn'>
+        Back Home
+      </Link>
+    </div>
+  );
+};
+
+export default Error;
+```
+
+### React Router - URL Params and Placeholder
+
+So let's cover how we can deal with list.
