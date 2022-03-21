@@ -2078,3 +2078,7 @@ const Person = () => {
 
 export default Person;
 ```
+
+### Memo - useMemo- useCallback
+
+#### /tutorial/12-memo-useMemo-useCallback
