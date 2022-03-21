@@ -1986,4 +1986,4 @@ export default Error;
 
 ### React Router - URL Params and Placeholder
 
-So let's cover how we can deal with list.
+So let's cover how we can deal with a list. In our case, we have the list of people. We'll setup a placeholder where we can imaging that this is a list of blog post, or list of products, just some kind of list of items.
