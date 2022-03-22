@@ -2161,3 +2161,6 @@ So we've added a new fuction addToCart. And remember that every time the functio
 But if the value has changed, then ofcourse it will create that function one more time. So we would wrap the logic of the addCart function inside the useCallback hook, and add the dependency array to it. This is important because it will be that, each time we update cart value, we're creating the addToCart function.
 
 So the good news here is that, if we're just working with the count state value, we're not going to trigger a re-render. So now we'll only create addToCart function when we update the cart value in the useCallback dependency list.
+
+### useMemo
+
