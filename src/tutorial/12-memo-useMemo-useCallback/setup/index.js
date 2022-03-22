@@ -10,8 +10,12 @@ const url = 'https://course-api.com/javascript-store-products';
 const calculateMoostExpensive = (data) => {
   return (
     data.reduce((total, item) => {
-      const price = data.field.price;
-    })
+      const price = item.fields.price;
+      if (price >= total) {
+        total = price;
+      }
+      return total;
+    },0) / 100
   );
 };
 
