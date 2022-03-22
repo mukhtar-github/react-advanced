@@ -2153,3 +2153,5 @@ const SingleProduct = ({ fields }) => {
 
 export default Index;
 ```
+
+### useCallback
