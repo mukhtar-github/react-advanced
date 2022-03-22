@@ -2156,4 +2156,4 @@ export default Index;
 
 ### useCallback
 
-So we've added a new fuction addToCart. And remember that every time the function runs, the cart state also changes, and that would trigger our component to re-render. The solution is using useCallback hook,
+So we've added a new fuction addToCart. And remember that every time the function runs, the cart state also changes, and that would trigger our component to re-render. The solution is using useCallback hook. This hook essentially does something similar to the memo, but this is going to do it with a function, where it's going to check whether the value of the function has changed, if it hadn't change, good, it will not recreate the function from the scratch. But if the value has changed, then ofcourse it will create that function one more time. So we would wrap the logic of the addCart function inside the useCallback hook, and add the dependency array to it, this is important because it will be that, each time we update cart value, we're creating the addToCart function.
