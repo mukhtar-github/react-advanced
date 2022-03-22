@@ -2164,3 +2164,4 @@ So the good news here is that, if we're just working with the count state value,
 
 ### useMemo
 
+useMemo hook unlike the useCallback which memoizes or remembers the function, the useMemo deals with a value. And don't confuse useMemo with React.memo, where React.memo will essentially be looking for the props and see where the props change, the useMemo is specifically for the value.
