@@ -7,6 +7,14 @@ const url = 'https://course-api.com/javascript-store-products';
 
 // every time props or state changes, component re-renders
 
+const calculateMoostExpensive = (data) => {
+  return (
+    data.reduce((total, item) => {
+      const price = data.field.price;
+    })
+  );
+};
+
 const Index = () => {
   const { products } = useFetch(url);
   const [count, setCount] = useState(0);
