@@ -2155,3 +2155,5 @@ export default Index;
 ```
 
 ### useCallback
+
+So we've added a new fuction addToCart. And remember that every time the function runs, the cart state also changes, and that would trigger our component to re-render. The solution is using useCallback hook,
