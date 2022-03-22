@@ -2095,3 +2095,5 @@ React is fast by default, and by this statement, you should'nt just start optimi
 > UseCallback is used to optimize the rendering behavior of your React function components, while useMemo is used to memoize expensive functions to avoid having to call them on every render.
 
 ### React.memo
+
+Since every time props or state changes, component re-renders. So the solution to this problem is to use the React memo function. Please don't confuse it with useMeno which is a React Hook. By wrapping the logic of our component inside the React.memo, each time the state value changes which is the count, the memo function, which is memoizing checks if the props value did not change, then we're not triggering the re-render.
