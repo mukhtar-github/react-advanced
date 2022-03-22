@@ -7,7 +7,7 @@ const url = 'https://course-api.com/javascript-store-products';
 
 // every time props or state changes, component re-renders
 
-const calculateMoostExpensive = (data) => {
+const calculateMostExpensive = (data) => {
   return (
     data.reduce((total, item) => {
       const price = item.fields.price;
@@ -35,6 +35,7 @@ const Index = () => {
         click me
       </button>
       <h1 style={{ marginTop: '3rem' }}>cart : {cart}</h1>
+      <h1>Most Expensive : ${calculateMostExpensive(products)}</h1>
       <BigList products={products} addToCart={addToCart} />
     </>
   )
