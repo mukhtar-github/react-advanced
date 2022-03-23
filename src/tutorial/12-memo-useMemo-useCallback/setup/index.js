@@ -8,6 +8,7 @@ const url = 'https://course-api.com/javascript-store-products';
 // every time props or state changes, component re-renders
 
 const calculateMostExpensive = (data) => {
+  console.log('hello');
   return (
     data.reduce((total, item) => {
       const price = item.fields.price;
