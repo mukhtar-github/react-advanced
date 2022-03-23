@@ -28,6 +28,8 @@ const Index = () => {
     setCart(cart + 1);
   },[cart]);
 
+  const mostExpensive = useMemo(() => calculateMostExpensive(products),[products]);
+
   return (
     <>
       <h1>Count : {count}</h1>

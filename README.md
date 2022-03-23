@@ -2166,4 +2166,4 @@ So the good news here is that, if we're just working with the count state value,
 
 useMemo hook unlike the useCallback which memoizes or remembers the function, the useMemo deals with a value. And don't confuse useMemo with React.memo, where React.memo will essentially be looking for the props and see where the props change, the useMemo is specifically for the value.
 
-So instead of returning a value each time a function is called, it will be nice if we can somehow remember that value and only the value changes when the data changes, in our case that is the products.
+So instead of returning a value each time a function is called, it will be nice if we can somehow remember that value, and only the value changes when the data changes, in our case that is the products. And this is where useMemo comes into play.
